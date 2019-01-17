@@ -1,0 +1,28 @@
+{{#> base }}
+    {{> AppSidebar/sidebar components-maps=this }}
+    <div class="app-main__outer">
+        <div class="app-main__inner">
+            {{> AppMain/page-title }}
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="main-card mb-3 card">
+                        <div class="card-body">
+                            <div class="card-title">World Map</div>
+                            <div id="world-map-gdp" style="width: 100%; height: 300px;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="main-card mb-3 card">
+                        <div class="card-body">
+                            <div class="card-title">Google Maps</div>
+                            <div id="gmap-example"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{> AppFooter/footer }}
+    </div>
+    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+{{/ base }}

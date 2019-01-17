@@ -1,0 +1,238 @@
+<div class="app-sidebar sidebar-shadow">
+    {{> ../AppHeader/Components/logo }}
+    <div class="scrollbar-sidebar">
+        <div class="app-sidebar__inner">
+            <ul class="vertical-nav-menu">
+                <li class="app-sidebar__heading">Dashboards</li>
+                <li>
+                    <a href="index.html"{{#if dashboards-eg-1}} class="mm-active"{{/if}}>
+                        <i class="metismenu-icon pe-7s-rocket"></i>
+                        Dashboard Example 1
+                    </a>
+                </li>
+                <li class="app-sidebar__heading">UI Components</li>
+                <li
+                    {{#if elements-buttons-standard}} class="mm-active"{{/if}}
+                    {{#if elements-dropdowns}} class="mm-active"{{/if}}
+                    {{#if elements-icons}} class="mm-active"{{/if}}
+                    {{#if elements-badges-labels}} class="mm-active"{{/if}}
+                    {{#if elements-cards}} class="mm-active"{{/if}}
+                    {{#if elements-list-group}} class="mm-active"{{/if}}
+                    {{#if elements-navigation}} class="mm-active"{{/if}}
+                    {{#if elements-utilities}} class="mm-active"{{/if}}
+                >
+                    <a href="#">
+                        <i class="metismenu-icon pe-7s-diamond"></i>
+                        Elements
+                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                    </a>
+                    <ul
+                        {{#if elements-buttons-standard}} class="mm-show"{{/if}}
+                        {{#if elements-dropdowns}} class="mm-show"{{/if}}
+                        {{#if elements-icons}} class="mm-show"{{/if}}
+                        {{#if elements-badges-labels}} class="mm-show"{{/if}}
+                        {{#if elements-cards}} class="mm-show"{{/if}}
+                        {{#if elements-list-group}} class="mm-show"{{/if}}
+                        {{#if elements-navigation}} class="mm-show"{{/if}}
+                        {{#if elements-utilities}} class="mm-show"{{/if}}
+                    >
+                        <li>
+                            <a href="elements-buttons-standard.html"{{#if elements-buttons-standard}} class="mm-active"{{/if}}>
+                                <i class="metismenu-icon"></i>
+                                Buttons
+                            </a>
+                        </li>
+                        <li>
+                            <a href="elements-dropdowns.html"{{#if elements-dropdowns}} class="mm-active"{{/if}}>
+                                <i class="metismenu-icon">
+                                </i>Dropdowns
+                            </a>
+                        </li>
+                        <li>
+                            <a href="elements-icons.html"{{#if elements-icons}} class="mm-active"{{/if}}>
+                                <i class="metismenu-icon">
+                                </i>Icons
+                            </a>
+                        </li>
+                        <li>
+                            <a href="elements-badges-labels.html"{{#if elements-badges-labels}} class="mm-active"{{/if}}>
+                                <i class="metismenu-icon">
+                                </i>Badges
+                            </a>
+                        </li>
+                        <li>
+                            <a href="elements-cards.html"{{#if elements-cards}} class="mm-active"{{/if}}>
+                                <i class="metismenu-icon">
+                                </i>Cards
+                            </a>
+                        </li>
+                        <li>
+                            <a href="elements-list-group.html"{{#if elements-list-group}} class="mm-active"{{/if}}>
+                                <i class="metismenu-icon">
+                                </i>List Groups
+                            </a>
+                        </li>
+                        <li>
+                            <a href="elements-navigation.html"{{#if elements-navigation}} class="mm-active"{{/if}}>
+                                <i class="metismenu-icon">
+                                </i>Navigation Menus
+                            </a>
+                        </li>
+                        <li>
+                            <a href="elements-utilities.html"{{#if elements-utilities}} class="mm-active"{{/if}}>
+                                <i class="metismenu-icon">
+                                </i>Utilities
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li
+                    {{#if components-tabs}} class="mm-active"{{/if}}
+                    {{#if components-accordions}} class="mm-active"{{/if}}
+                    {{#if components-notifications}} class="mm-active"{{/if}}
+                    {{#if components-modals}} class="mm-active"{{/if}}
+                    {{#if components-progress-bar}} class="mm-active"{{/if}}
+                    {{#if components-tooltips-popovers}} class="mm-active"{{/if}}
+                    {{#if components-carousel}} class="mm-active"{{/if}}
+                    {{#if components-calendar}} class="mm-active"{{/if}}
+                    {{#if components-pagination}} class="mm-active"{{/if}}
+                    {{#if components-scrollable-elements}} class="mm-active"{{/if}}
+                    {{#if components-maps}} class="mm-active"{{/if}}
+                >
+                    <a href="#">
+                        <i class="metismenu-icon pe-7s-car"></i>
+                        Components
+                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                    </a>
+                    <ul
+                        {{#if components-tabs}} class="mm-show"{{/if}}
+                        {{#if components-accordions}} class="mm-show"{{/if}}
+                        {{#if components-notifications}} class="mm-show"{{/if}}
+                        {{#if components-modals}} class="mm-show"{{/if}}
+                        {{#if components-progress-bar}} class="mm-show"{{/if}}
+                        {{#if components-tooltips-popovers}} class="mm-show"{{/if}}
+                        {{#if components-carousel}} class="mm-show"{{/if}}
+                        {{#if components-calendar}} class="mm-show"{{/if}}
+                        {{#if components-pagination}} class="mm-show"{{/if}}
+                        {{#if components-scrollable-elements}} class="mm-show"{{/if}}
+                        {{#if components-maps}} class="mm-show"{{/if}}
+                    >
+                        <li>
+                            <a href="components-tabs.html"{{#if components-tabs}} class="mm-active"{{/if}}>
+                                <i class="metismenu-icon">
+                                </i>Tabs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="components-accordions.html"{{#if components-accordions}} class="mm-active"{{/if}}>
+                                <i class="metismenu-icon">
+                                </i>Accordions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="components-notifications.html"{{#if components-notifications}} class="mm-active"{{/if}}>
+                                <i class="metismenu-icon">
+                                </i>Notifications
+                            </a>
+                        </li>
+                        <li>
+                            <a href="components-modals.html"{{#if components-modals}} class="mm-active"{{/if}}>
+                                <i class="metismenu-icon">
+                                </i>Modals
+                            </a>
+                        </li>
+                        <li>
+                            <a href="components-progress-bar.html"{{#if components-progress-bar}} class="mm-active"{{/if}}>
+                                <i class="metismenu-icon">
+                                </i>Progress Bar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="components-tooltips-popovers.html"{{#if components-tooltips-popovers}} class="mm-active"{{/if}}>
+                                <i class="metismenu-icon">
+                                </i>Tooltips &amp; Popovers
+                            </a>
+                        </li>
+                        <li>
+                            <a href="components-carousel.html"{{#if components-carousel}} class="mm-active"{{/if}}>
+                                <i class="metismenu-icon">
+                                </i>Carousel
+                            </a>
+                        </li>
+                        <li>
+                            <a href="components-calendar.html"{{#if components-calendar}} class="mm-active"{{/if}}>
+                                <i class="metismenu-icon">
+                                </i>Calendar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="components-pagination.html"{{#if components-pagination}} class="mm-active"{{/if}}>
+                                <i class="metismenu-icon">
+                                </i>Pagination
+                            </a>
+                        </li>
+                        <li>
+                            <a href="components-scrollable-elements.html"{{#if components-scrollable-elements}} class="mm-active"{{/if}}>
+                                <i class="metismenu-icon">
+                                </i>Scrollable
+                            </a>
+                        </li>
+                        <li>
+                            <a href="components-maps.html"{{#if components-maps}} class="mm-active"{{/if}}>
+                                <i class="metismenu-icon">
+                                </i>Maps
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li {{#if tables-regular}} class="mm-active"{{/if}} >
+                    <a href="tables-regular.html">
+                        <i class="metismenu-icon pe-7s-display2"></i>
+                        Tables
+                    </a>
+                </li>
+                <li class="app-sidebar__heading">Widgets</li>
+                <li>
+                    <a href="dashboard-boxes.html"{{#if widgets-chart-boxes-3}} class="mm-active"{{/if}}>
+                        <i class="metismenu-icon pe-7s-display2"></i>
+                        Dashboard Boxes
+                    </a>
+                </li>
+                <li class="app-sidebar__heading">Forms</li>
+                <li>
+                    <a href="forms-controls.html"{{#if forms-controls}} class="mm-active"{{/if}}>
+                        <i class="metismenu-icon pe-7s-mouse">
+                        </i>Forms Controls
+                    </a>
+                </li>
+                <li>
+                    <a href="forms-layouts.html"{{#if forms-layouts}} class="mm-active"{{/if}}>
+                        <i class="metismenu-icon pe-7s-eyedropper">
+                        </i>Forms Layouts
+                    </a>
+                </li>
+                <li>
+                    <a href="forms-validation.html"{{#if forms-validation}} class="mm-active"{{/if}}>
+                        <i class="metismenu-icon pe-7s-pendrive">
+                        </i>Forms Validation
+                    </a>
+                </li>
+                <li class="app-sidebar__heading">Charts</li>
+                <li>
+                    <a href="charts-chartjs.html"{{#if charts-chartjs}} class="mm-active"{{/if}}>
+                        <i class="metismenu-icon pe-7s-graph2">
+                        </i>ChartJS
+                    </a>
+                </li>
+                <li class="app-sidebar__heading">PRO Version</li>
+                <li>
+                    <a href="https://dashboardpack.com/theme-details/architectui-dashboard-html-pro/" target="_blank">
+                        <i class="metismenu-icon pe-7s-graph2">
+                        </i>
+                        Upgrade to PRO
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
