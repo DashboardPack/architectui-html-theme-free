@@ -1,3 +1,3 @@
 ### Changelog
 
-## Version 1.1.1 (27 December 2018)
+## Version 1.0.0 (17 January 2019)
