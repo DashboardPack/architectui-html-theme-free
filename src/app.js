@@ -68,16 +68,21 @@ $(document).ready(() => {
 
     // Responsive
 
-    $(window).on('resize', function(){
-        var win = $(this);
-        if (win.width() < 1250) {
+    var resizeClass = function () {
+        var win = document.body.clientWidth;
+        if (win < 1250) {
             $('.app-container').addClass('closed-sidebar-mobile closed-sidebar');
-        }
-        else
-        {
+        } else {
             $('.app-container').removeClass('closed-sidebar-mobile closed-sidebar');
         }
+    };
+
+
+    $(window).on('resize', function () {
+        resizeClass();
     });
+
+    resizeClass();
 
 });
 
