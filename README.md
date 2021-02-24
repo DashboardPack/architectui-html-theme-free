@@ -1,9 +1,14 @@
-#### ArchitectUI Bootstrap 4 jQuery/HTML Theme FREE
-#### Made with love by DashboardPack.com
+# ArchitectUI Bootstrap 4 jQuery/HTML Theme FREE
+## Made with love by DashboardPack.com
 
-## PRO Version Available at - https://dashboardpack.com/theme-details/architectui-dashboard-html-pro/
+ArchitectUI is a free HTML admin template based on Bootstrap. It is used by thousands of developerd to build SaaS and varios other admin panels for webapps. This version hosted on Github is for preview only. It has a limited functionality in comparison to [Pro version](https://dashboardpack.com/theme-details/architectui-dashboard-html-pro/) yet it comes with unlimited color schemes and flexibility unmatched to most other Premium admin dashboards. 
 
-Installation
+## PRO Version Available [here](https://dashboardpack.com/theme-details/architectui-dashboard-html-pro/)
+
+## Preview 
+
+![ArchitectUI Bootstrap 4 Free](https://colorlib.com/wp/wp-content/uploads/sites/2/architectui-html-free.jpg)
+## Installation
 Download and uncompress the theme package archive in your desired folder location.
 
 Download and install Node.js from nodejs.org/en/download/
