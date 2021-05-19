@@ -163,7 +163,7 @@ module.exports = (options) => {
         webpackConfig.plugins.push(
             new BrowserSyncPlugin({
                 host: 'localhost',
-                port: 3001,
+                port: 3002,
                 files: ["public/**/*.*"],
                 browser: "google chrome",
                 reloadDelay: 1000,
