@@ -57,13 +57,13 @@
   align-content: center;
 }
 
-.alert-dismissible {
-  .close {
-    top: 0;
-    right: 5px;
-    padding: 5px;
-  }
-}
+// .alert-dismissible {
+//   .btn-close {
+//     top: 0;
+//     right: 5px;
+//     padding: 5px;
+//   }
+// }
 
 // Gradient Icons
 
@@ -249,4 +249,29 @@
   canvas {
     display: block;
   }
+}
+
+.btn-info, .btn-success {
+  color:#fff !important;
+}
+
+.bg-warning {
+  color: #212529;
+}
+
+.list-group-item {
+  border: 1px solid rgba(0,0,0,0.125);
+}
+
+.btn-link, a {
+  text-decoration: none !important;
+}
+
+.bg-light {
+  color: #212529;
+  // background: #fff;
+}
+
+.table {
+  --bs-table-accent-bg: none;
 }

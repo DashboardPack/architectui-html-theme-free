@@ -222,7 +222,7 @@ const pages = [
         output: './forms-controls.html',
         content: {
             title: 'Form Controls',
-            description: 'Wide selection of forms controls, using the Bootstrap 4 code base, but built with React.',
+            description: 'Wide selection of forms controls, using the Bootstrap 5 code base, but built with React.',
             heading_icon: 'pe-7s-display1 icon-gradient bg-premium-dark'
         },
         template: './src/DemoPages/forms/elements/controls.hbs'

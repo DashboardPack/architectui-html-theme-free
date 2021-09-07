@@ -1,7 +1,7 @@
 // Imports
 
 import $ from "jquery";
-import 'bootstrap';
+import * as bootstrap from 'bootstrap';
 import 'metismenu';
 
 // Stylesheets
@@ -22,11 +22,11 @@ $(document).ready(() => {
         $(this).parent().parent().addClass('active');
     });
 
-    $('.search-wrapper .close').click(function () {
+    $('.search-wrapper .btn-close').click(function () {
         $(this).parent().removeClass('active');
     });
 
-    // Stop Bootstrap 4 Dropdown for closing on click inside
+    // Stop Bootstrap 5 Dropdown for closing on click inside
 
     $('.dropdown-menu').on('click', function (event) {
         var events = $._data(document, 'events') || {};
@@ -46,14 +46,16 @@ $(document).ready(() => {
         event.stopPropagation(); //Always stop propagation
     });
 
-    $(function () {
-        $('[data-toggle="popover"]').popover();
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl);
     });
 
-    // BS4 Tooltips
+    // BS5 Tooltips
 
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip();
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
     });
 
     $('.mobile-toggle-nav').click(function () {
