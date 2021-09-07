@@ -68,21 +68,20 @@ $alt: $purple;
 
 $theme-colors: ();
 
-$theme-colors: map-merge(
-                (
-                        "primary": $primary,
-                        "secondary": $secondary,
-                        "success": $success,
-                        "info": $info,
-                        "warning": $warning,
-                        "danger": $danger,
-                        "light": $light,
-                        "dark": $dark,
-                        "focus": $focus,
-                        "alternate": $alt
-                ),
-                $theme-colors
+$custom-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+  "focus": $focus,
+  "alternate": $alt
 );
+
+$theme-colors: map-merge( $theme-colors, $custom-colors);
 
 // BOOTSTRAP OVERWRITES
 
@@ -144,12 +143,12 @@ $popover-header-bg: $white;
 
 // Color Modifiers
 
-$link-color: theme-color("primary");
-$component-active-bg: theme-color("primary");
-$custom-control-indicator-checked-disabled-bg: rgba(theme-color("primary"), .5);
-$form-feedback-valid-color: theme-color("success");
-$form-feedback-invalid-color: theme-color("danger");
-$progress-bar-bg: theme-color("primary");
+$link-color: $primary;
+$component-active-bg: $primary;
+$custom-control-indicator-checked-disabled-bg: rgba($primary, .5);
+$form-feedback-valid-color: $success;
+$form-feedback-invalid-color: $danger;
+$progress-bar-bg: $primary;
 $input-btn-focus-color: rgba($component-active-bg, .25);
 $input-focus-border-color: lighten($component-active-bg, 25%);
 $custom-control-indicator-checked-bg: $component-active-bg;
@@ -180,15 +179,15 @@ $list-group-border-color: rgba($primary, .08) !default;
 
 // List Group
 
-@each $color, $value in $theme-colors {
-  @include list-group-item-variant($color, theme-color-level($color, -9), theme-color-level($color, 6));
-}
+// @each $color, $value in $theme-colors {
+//   @include list-group-item-variant($color, theme-color-level($color, -9), theme-color-level($color, 6));
+// }
 
 // Background
 
-@each $color, $value in $theme-colors {
-  @include bg-variant(".bg-#{$color}", $value);
-}
+// @each $color, $value in $theme-colors {
+//   @include bg-variant(".bg-#{$color}", $value);
+// }
 
 @if $enable-gradients {
   @each $color, $value in $theme-colors {

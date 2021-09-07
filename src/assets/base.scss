@@ -1,61 +1,64 @@
 /*!
  =========================================================
- * ArchitectUI HTML Theme Dashboard - v1.0.0
+ * ArchitectUI HTML Theme Dashboard - v2.0.0
  =========================================================
  * Product Page: https://dashboardpack.com
- * Copyright 2019 DashboardPack (https://dashboardpack.com)
+ * Copyright 2021 DashboardPack (https://dashboardpack.com)
  * Licensed under MIT (https://github.com/DashboardPack/architectui-html-theme-free/blob/master/LICENSE)
  =========================================================
  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
  */
 
-// BOOTSTRAP 4 VARIABLES
+// BOOTSTRAP 5 VARIABLES
 
-@import "components/bootstrap4/functions";
-@import "components/bootstrap4/variables";
-@import "components/bootstrap4/mixins";
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "components/bootstrap5/functions";
 
-// ArchitectUI Themes Variables
+// 2. Include any default variable overrides here
 
 @import "themes/layout-variables";
 
-// BOOTSTRAP 4 IMPORTS
+// 3. Include remainder of required Bootstrap stylesheets
 
-@import "components/bootstrap4/root";
-@import "components/bootstrap4/reboot";
-@import "components/bootstrap4/type";
-@import "components/bootstrap4/images";
-@import "components/bootstrap4/code";
-@import "components/bootstrap4/grid";
-@import "components/bootstrap4/tables";
-@import "components/bootstrap4/forms";
-@import "components/bootstrap4/buttons";
-@import "components/bootstrap4/transitions";
-@import "components/bootstrap4/dropdown";
-@import "components/bootstrap4/button-group";
-@import "components/bootstrap4/input-group";
-@import "components/bootstrap4/custom-forms";
-@import "components/bootstrap4/nav";
-@import "components/bootstrap4/navbar";
-@import "components/bootstrap4/card";
-@import "components/bootstrap4/breadcrumb";
-@import "components/bootstrap4/pagination";
-@import "components/bootstrap4/badge";
-@import "components/bootstrap4/jumbotron";
-@import "components/bootstrap4/alert";
-@import "components/bootstrap4/progress";
-@import "components/bootstrap4/media";
-@import "components/bootstrap4/list-group";
-@import "components/bootstrap4/close";
-@import "components/bootstrap4/toasts";
-@import "components/bootstrap4/modal";
-@import "components/bootstrap4/tooltip";
-@import "components/bootstrap4/popover";
-@import "components/bootstrap4/carousel";
-@import "components/bootstrap4/spinners";
-@import "components/bootstrap4/utilities";
-@import "components/bootstrap4/print";
+@import "components/bootstrap5/variables";
+@import "components/bootstrap5/mixins";
+@import "components/bootstrap5/utilities";
 
+// BOOTSTRAP 5 IMPORTS
+
+@import "components/bootstrap5/root";
+@import "components/bootstrap5/reboot";
+@import "components/bootstrap5/type";
+@import "components/bootstrap5/images";
+@import "components/bootstrap5/containers";
+@import "components/bootstrap5/grid";
+@import "components/bootstrap5/tables";
+@import "components/bootstrap5/forms";
+@import "components/bootstrap5/buttons";
+@import "components/bootstrap5/transitions";
+@import "components/bootstrap5/dropdown";
+@import "components/bootstrap5/button-group";
+@import "components/bootstrap5/nav";
+@import "components/bootstrap5/navbar";
+@import "components/bootstrap5/card";
+@import "components/bootstrap5/accordion";
+@import "components/bootstrap5/breadcrumb";
+@import "components/bootstrap5/pagination";
+@import "components/bootstrap5/badge";
+@import "components/bootstrap5/alert";
+@import "components/bootstrap5/progress";
+@import "components/bootstrap5/list-group";
+@import "components/bootstrap5/close";
+@import "components/bootstrap5/toasts";
+@import "components/bootstrap5/modal";
+@import "components/bootstrap5/tooltip";
+@import "components/bootstrap5/popover";
+@import "components/bootstrap5/carousel";
+@import "components/bootstrap5/spinners";
+@import "components/bootstrap5/offcanvas";
+@import "components/bootstrap5/jumbotron";
+@import "components/bootstrap5/helpers";
+@import "components/bootstrap5/utilities/api";
 // LAYOUT
 
 @import "layout/layout";

@@ -24,7 +24,7 @@
 
 // Links
 
-$link-color: theme-color("primary");
+$link-color: $primary;
 $link-hover-color: darken($link-color, 15%);
 
 @each $color, $value in $theme-colors {

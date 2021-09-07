@@ -1,10 +1,10 @@
 // Badges
 
-@each $color, $value in $theme-colors {
-  .badge-#{$color} {
-    @include badge-variant($value);
-  }
-}
+// @each $color, $value in $theme-colors {
+//   .badge-#{$color} {
+//     @include badge-variant($value);
+//   }
+// }
 
 .badge {
   font-weight: bold;
@@ -25,7 +25,7 @@
 }
 
 .btn-sm {
-  .badge-pill {
+  .rounded-pill {
     position: absolute;
     top: -4px;
     right: -4px;

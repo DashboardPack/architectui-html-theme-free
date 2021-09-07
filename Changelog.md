@@ -8,3 +8,7 @@
 - Alert Dismissing issue resolved
 - Card image issue resolved
 - Fontawesome icon issue resolved
+
+## Version 2.0.0 (07 Sep 2021)
+
+- Migrating to Bootstrap v5

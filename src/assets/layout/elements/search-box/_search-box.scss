@@ -80,7 +80,7 @@ $search-box-size: 42px;
     }
   }
 
-  .close {
+  .btn-close {
     position: absolute;
     z-index: 1;
     top: 50%;
@@ -90,14 +90,14 @@ $search-box-size: 42px;
     margin-top: -10px;
     cursor: pointer;
     opacity: 0 !important;
-    transform: rotate(-180deg);
+    // transform: rotate(-180deg);
     transition: all .2s cubic-bezier(0.285, -0.450, 0.935, 0.110);
     transition-delay: 0.1s;
 
     &::before,
     &::after {
       position: absolute;
-      content: '';
+      // content: '';
       background: $primary;
       border-radius: 2px;
     }
@@ -143,10 +143,10 @@ $search-box-size: 42px;
       }
     }
 
-    .close {
+    .btn-close {
       left: 300px;
       opacity: .6 !important;
-      transform: rotate(45deg);
+      // transform: rotate(45deg);
       transition: all .6s cubic-bezier(0.000, 0.105, 0.035, 1.570);
       transition-delay: 0.5s;
 
