@@ -12,3 +12,7 @@
 ## Version 2.0.0 (07 Sep 2021)
 
 - Migrating to Bootstrap v5
+
+## Version 3.0.0 (05 April 2021)
+
+- Migrating to WebPack v5
