@@ -31,7 +31,7 @@ You can also use yarn to install dependencies instead of npm.
 
     npm run start
                                                         
-After the comand finished, you should see a Compiled successfully! message in your terminal window. Also, a web server service will be started so you can view your app in the browser: http://localhost:8081
+After the comand finished, you should see a Compiled successfully! message in your terminal window. Also, a web server service will be started so you can view your app in the browser: http://localhost:8080
 
 To create a production optimised build run the command below:
 

@@ -1,11 +1,10 @@
 'use strict';
-
 const Path = require('path');
 const Webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const ExtractSASS = new ExtractTextPlugin('./[name].css');
+const ExtractSASS = new MiniCssExtractPlugin({filename:'./[name].css'});
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const webpack = require('webpack');
@@ -29,6 +28,7 @@ module.exports = (options) => {
     const dest = Path.join(__dirname, 'architectui-html-free');
 
     let webpackConfig = {
+        mode: 'none',
         devtool: options.devtool,
         entry: {
             main: './src/app.js',
@@ -52,9 +52,11 @@ module.exports = (options) => {
                 'window.Tether': 'tether',
                 Popper: ['popper.js', 'default'],
             }),
-            new CopyWebpackPlugin([
-                {from: './src/assets/images', to: './assets/images'}
-            ]),
+            new CopyWebpackPlugin({
+              patterns: [
+                { from: './src/assets/images', to: './assets/images' }
+              ]
+            }),
             new Webpack.DefinePlugin({
                 'process.env': {
                     NODE_ENV: JSON.stringify(options.isProduction ? 'production' : 'development')
@@ -71,7 +73,7 @@ module.exports = (options) => {
                 {
                     test: /\.hbs$/,
                     loader: 'handlebars-loader',
-                    query: {
+                    options: {
                         helperDirs: [
                             Path.join(__dirname, 'src', 'helpers')
                         ],
@@ -82,22 +84,12 @@ module.exports = (options) => {
                     }
                 },
                 {
-                    test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-                    use: [{
-                        loader: 'file-loader',
-                        options: {
-                            name: '[name].[ext]',
-                            outputPath: './assets/fonts'
-                        }
-                    }]
+                    test: /\.(woff|woff2|eot|ttf|otf)$/i,
+                    type: 'asset/resource',
                 },
                 {
-                    test: /\.(gif|jpg|png)$/,
-                    loader: 'file-loader',
-                    options: {
-                        name: '[name].[ext]',
-                        outputPath: './assets/images'
-                    }
+                    test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                    type: 'asset/resource',
                 }
             ]
         }
@@ -138,26 +130,17 @@ module.exports = (options) => {
 
         webpackConfig.module.rules.push({
             test: /\.scss$/i,
-            use: ['style-loader?sourceMap', 'css-loader?sourceMap', 'sass-loader?sourceMap']
+            use: ['style-loader', 'css-loader', 'sass-loader']
         }, {
             test: /\.css$/i,
             use: ['style-loader', 'css-loader']
-        }, {
-            test: /\.js$/,
-            use: 'eslint-loader',
-            exclude: /node_modules/
-        });
+        },
+        );
 
         webpackConfig.devServer = {
             port: options.port,
-            contentBase: dest,
             historyApiFallback: true,
-            compress: options.isProduction,
-            inline: !options.isProduction,
             hot: !options.isProduction,
-            stats: {
-                chunks: true
-            }
         };
 
         webpackConfig.plugins.push(
