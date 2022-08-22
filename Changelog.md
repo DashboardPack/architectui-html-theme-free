@@ -16,3 +16,7 @@
 ## Version 3.0.0 (05 April 2021)
 
 - Migrating to WebPack v5
+
+## Version 3.1.0 (22 Aug 2022)
+
+- Library Update

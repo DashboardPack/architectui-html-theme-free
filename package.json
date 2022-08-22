@@ -1,6 +1,6 @@
 {
   "name": "architectui-html-free",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "ArchitectUI - Free Bootstrap 5 Admin Dashboard Template",
   "author": "DashboardPack.com",
   "homepage": "https://dashboardpack.com",
@@ -27,27 +27,27 @@
     }
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.1.1",
-    "@fullcalendar/core": "^5.10.1",
-    "@fullcalendar/daygrid": "^5.10.1",
-    "@fullcalendar/interaction": "^5.10.1",
-    "@fullcalendar/list": "^5.10.1",
-    "@fullcalendar/timegrid": "^5.10.1",
-    "@popperjs/core": "^2.11.4",
+    "@fortawesome/fontawesome-free": "^6.1.2",
+    "@fullcalendar/core": "^5.11.2",
+    "@fullcalendar/daygrid": "^5.11.2",
+    "@fullcalendar/interaction": "^5.11.2",
+    "@fullcalendar/list": "^5.11.2",
+    "@fullcalendar/timegrid": "^5.11.2",
+    "@popperjs/core": "^2.11.6",
     "animate.css": "^4.1.1",
-    "bootstrap": "^5.1.3",
+    "bootstrap": "^5.2.0",
     "chart.js": "^2.9.4",
-    "fullcalendar": "^5.10.2",
+    "fullcalendar": "^5.11.2",
     "gmaps": "^0.4.25",
     "jquery": "^3.6.0",
-    "mapbox-gl": "^2.7.1",
+    "mapbox-gl": "^2.9.2",
     "metismenu": "^3.0.7",
-    "moment": "^2.29.2",
+    "moment": "^2.29.4",
     "pe7-icon": "^1.0.4",
     "perfect-scrollbar": "^1.5.5",
     "toastr": "^2.1.4",
     "wnumb": "^1.2.0",
-    "yarn": "^1.22.18"
+    "yarn": "^1.22.19"
   },
   "resolutions": {
     "**/event-stream": "^4.0.1"
