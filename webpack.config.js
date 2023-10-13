@@ -117,7 +117,12 @@ module.exports = (options) => {
 
         webpackConfig.module.rules.push({
             test: /\.scss$/i,
-            use: ExtractSASS.extract(['css-loader', 'sass-loader'])
+            use: ExtractSASS.extract(['css-loader',           {
+                loader: "sass-loader",
+                options: {
+                  warnRuleAsWarning: false,
+                },
+            }])
         }, {
             test: /\.css$/i,
             use: ExtractSASS.extract(['css-loader'])
@@ -130,11 +135,17 @@ module.exports = (options) => {
 
         webpackConfig.module.rules.push({
             test: /\.scss$/i,
-            use: ['style-loader', 'css-loader', 'sass-loader']
+            use: ['style-loader', 'css-loader',
+            {
+                loader: "sass-loader",
+                options: {
+                  warnRuleAsWarning: false,
+                },
+            }]
         }, {
             test: /\.css$/i,
             use: ['style-loader', 'css-loader']
-        },
+        }
         );
 
         webpackConfig.devServer = {
