@@ -37,7 +37,7 @@
 
   p {
     color: $gray-500;
-    font-size: ($font-size-sm / 1.2);
+    font-size: divide($font-size-sm, 1.2);
     margin: 5px 0 0;
   }
 }
@@ -56,4 +56,41 @@
   height: 350px;
   margin-bottom: $grid-gutter-width;
   background-size: 100%;
+}
+
+// Loaders wrapper
+
+.loader-wrapper {
+  width: 150px;
+  height: 100px;
+  // @include float-left;
+}
+
+// Slick slider
+
+.slider-item {
+  background: $gray-300;
+  @include border-radius($border-radius);
+  color: $gray-600;
+  font-size: 36px;
+  padding: 0;
+  position: relative;
+  height: 150px;
+  line-height: 150px;
+  text-align: center;
+  margin: 0 $layout-spacer-x;
+  transition: all .2s;
+}
+
+.slick-center {
+  .slider-item {
+    background: $gray-500;
+    color: $gray-700;
+  }
+}
+
+// Image Crop
+
+.after-img {
+  max-width: 100%;
 }

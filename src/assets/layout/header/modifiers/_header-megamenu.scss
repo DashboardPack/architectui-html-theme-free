@@ -1,0 +1,23 @@
+// Header Mega Menu
+
+.header-megamenu {
+  &.nav {
+    & > li > .nav-link {
+      color: $gray-600;
+      padding-left: divide($nav-link-padding-x, 1.5);
+      padding-right: divide($nav-link-padding-x, 1.5);
+
+      .rounded-pill {
+        padding: 5px 7px;
+      }
+
+      &:hover {
+        color: $gray-800;
+      }
+
+      .fa {
+        margin-top: 3px;
+      }
+    }
+  }
+}
