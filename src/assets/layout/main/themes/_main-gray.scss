@@ -1,0 +1,84 @@
+// Theme Gray
+
+// Variables
+
+$app-container-bg: #ffffff;
+$app-sidebar-bg: #ffffff;
+$app-header-bg: #f8f9fa;
+$app-header-logo-bg: rgba(0, 0, 0, .03);
+
+// Content
+
+.app-theme-gray {
+
+  &.app-container {
+    background: $app-container-bg;
+  }
+
+  .app-sidebar {
+    background: $app-sidebar-bg;
+    border-right: $gray-300 solid 1px;
+  }
+
+  .app-page-title {
+    background: rgba(0, 0, 0, .03);
+  }
+
+  .app-footer,
+  .app-header {
+    background: $app-header-bg;
+  }
+
+  .app-footer {
+    border-top: $gray-300 solid 1px;
+  }
+
+  .app-header {
+    .app-header__logo {
+      border-right: rgba(0, 0, 0, .1) solid 1px;
+    }
+  }
+
+  &.fixed-header {
+    .app-header__logo {
+      background: $app-header-logo-bg;
+    }
+  }
+
+  .card {
+    border-width: 1px;
+  }
+
+  .main-card {
+    box-shadow: 0 0 0 0 transparent !important;
+
+    & > .card-body {
+
+      & > .card-title {
+        text-transform: none;
+        font-size: $font-size-lg;
+        font-weight: normal;
+        border-bottom: $gray-300 solid 1px;
+        position: relative;
+        padding: 0 0 ($card-spacer-y * 1.5);
+        margin: 0 0 ($card-spacer-y * 1.5);
+
+        &::before {
+          position: absolute;
+          width: 40px;
+          background: $primary;
+          @include border-radius(30px);
+          height: 5px;
+          left: 0;
+          bottom: -2px;
+          content: "";
+        }
+      }
+    }
+  }
+
+  .app-inner-layout__sidebar {
+    border-left: 0 !important;
+  }
+
+}

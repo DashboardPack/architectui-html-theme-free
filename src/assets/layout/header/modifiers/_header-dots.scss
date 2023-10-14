@@ -1,0 +1,71 @@
+// Header Dots
+
+.header-dots {
+  margin-left: auto;
+  display: flex;
+
+  & > .dropdown {
+    display: flex;
+    align-content: center;
+  }
+
+  .icon-wrapper-alt {
+    margin: 0;
+    height: 44px;
+    width: 44px;
+    text-align: center;
+    overflow: visible;
+
+    .language-icon {
+      @include border-radius(30px);
+      position: relative;
+      z-index: 4;
+      width: 32px;
+      height: 32px;
+      overflow: hidden;
+      margin: 0 auto;
+
+      img {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        margin: -22px 0 0 -20px;
+      }
+
+    }
+
+    .icon-wrapper-bg {
+      opacity: .1;
+      transition: opacity .2s;
+      @include border-radius(40px);
+    }
+
+    svg {
+      margin: 0 auto;
+    }
+
+    @-moz-document url-prefix() {
+      svg {
+        width: 50%;
+      }
+    }
+
+    i {
+      font-size: 1.3rem;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      .icon-wrapper-bg {
+        opacity: .2;
+      }
+    }
+
+    .badge-dot {
+      top: 1px;
+      right: 1px;
+      border: 0;
+    }
+  }
+}
