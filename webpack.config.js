@@ -1,13 +1,12 @@
 'use strict';
 const Path = require('path');
-const Webpack = require('webpack');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractSASS = new MiniCssExtractPlugin({filename:'./[name].css'});
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
-const webpack = require('webpack');
 
 const pages = require('./src/pages');
 let renderedPages = [];
@@ -44,7 +43,7 @@ module.exports = (options) => {
             filename: './assets/scripts/[name].js'
         },
         plugins: [
-            new Webpack.ProvidePlugin({
+            new webpack.ProvidePlugin({
                 $: 'jquery',
                 jQuery: 'jquery',
                 'window.jQuery': 'jquery',
@@ -57,7 +56,7 @@ module.exports = (options) => {
                 { from: './src/assets/images', to: './assets/images' }
               ]
             }),
-            new Webpack.DefinePlugin({
+            new webpack.DefinePlugin({
                 'process.env': {
                     NODE_ENV: JSON.stringify(options.isProduction ? 'production' : 'development')
                 }
@@ -130,7 +129,7 @@ module.exports = (options) => {
 
     } else {
         webpackConfig.plugins.push(
-            new Webpack.HotModuleReplacementPlugin()
+            new webpack.HotModuleReplacementPlugin()
         );
 
         webpackConfig.module.rules.push({
