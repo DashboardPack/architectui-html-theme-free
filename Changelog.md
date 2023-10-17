@@ -1,22 +1,39 @@
-### Changelog
+# Changelog
 
-## Version 1.0.0 (17 January 2019)
+All notable changes to this project will be documented in this file.
 
-## Version 1.2.3 (19 May 2021)
+## [4.0.0] - 2023-10-17
 
+### Changed
+- Migrated to React v18
+- Upgraded all dependencies
+
+## [3.1.0] - 2022-08-22
+
+### Changed
+- Updated the library
+
+## [3.0.0] - 2022-04-05
+
+### Changed
+- Migrated to WebPack v5
+
+## [2.0.0] - 2021-09-07
+
+### Changed
+- Migrated to Bootstrap v5
+
+## [1.2.3] - 2021-05-19
+
+### Added
 - Added mapbox-gl plugin
-- Alert Dismissing issue resolved
-- Card image issue resolved
-- Fontawesome icon issue resolved
 
-## Version 2.0.0 (07 Sep 2021)
+### Fixed
+- Resolved alert dismissing issue
+- Resolved card image issue
+- Resolved Fontawesome icon issue
 
-- Migrating to Bootstrap v5
+## [1.0.0] - 2019-01-17
 
-## Version 3.0.0 (05 April 2021)
-
-- Migrating to WebPack v5
-
-## Version 3.1.0 (22 Aug 2022)
-
-- Library Update
+### Added
+Initial release of the project.
