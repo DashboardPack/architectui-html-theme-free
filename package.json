@@ -57,7 +57,7 @@
     "@babel/preset-env": "^7.23.2",
     "animate-sass": "^0.8.2",
     "babel-loader": "^9.1.3",
-    "browser-sync": "^2.29.3",
+    "browser-sync": "^3.0.2",
     "browser-sync-webpack-plugin": "^2.3.0",
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^11.0.0",
