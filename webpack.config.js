@@ -6,7 +6,6 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractSASS = new MiniCssExtractPlugin({filename:'./[name].css'});
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 const pages = require('./src/pages');
 let renderedPages = [];
@@ -103,7 +102,6 @@ module.exports = (options) => {
             './src/scripts-init/calendar.js',
             './src/scripts-init/maps.js',
             './src/scripts-init/charts/chartjs.js',
-
         ];
 
         webpackConfig.plugins.push(
@@ -150,25 +148,21 @@ module.exports = (options) => {
         webpackConfig.devServer = {
             port: options.port,
             historyApiFallback: true,
-            hot: !options.isProduction,
+            hot: true,
+            static: {
+                directory: Path.join(__dirname, 'public'),
+            },
+            watchFiles: ['public/**/*.*'],
+            open: {
+                target: ['http://localhost:8080'],
+                app: {
+                    name: 'google chrome'
+                }
+            }
         };
-
-        webpackConfig.plugins.push(
-            new BrowserSyncPlugin({
-                host: 'localhost',
-                port: 3002,
-                files: ["public/**/*.*"],
-                browser: "google chrome",
-                reloadDelay: 1000,
-            }, {
-                reload: false
-            })
-        );
-
     }
 
     webpackConfig.plugins = webpackConfig.plugins.concat(renderedPages);
 
     return webpackConfig;
-
 };
