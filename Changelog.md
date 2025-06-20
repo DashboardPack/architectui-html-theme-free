@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [4.2.0] - 2025-01-27
+## [4.2.0] - 2025-06-20
 
 ### 🚀 Major Updates
 - **Complete dependency modernization** - All npm packages updated to latest versions

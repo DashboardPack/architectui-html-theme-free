@@ -121,7 +121,7 @@ This version includes breaking improvements. For existing projects:
 4. **Test your maps** - new implementation may require updates
 
 ## 📈 **Version History**
-- **v4.2.0** (2025-01-27) - Complete modernization, SASS future-proofing, enhanced maps
+- **v4.2.0** (2025-06-20) - Complete modernization, SASS future-proofing, enhanced maps
 - **v4.0.0** (2023-10-17) - React v18 migration, dependency upgrades  
 - **v3.1.0** (2022-08-22) - Library updates
 - **v3.0.0** (2022-04-05) - WebPack v5 migration
