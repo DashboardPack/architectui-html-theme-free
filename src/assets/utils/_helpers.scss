@@ -1,3 +1,5 @@
+@use "sass:math";
+
 // Helpers imports
 @import "helpers/opacity";
 @import "helpers/grayscale";
@@ -284,7 +286,7 @@
 
 .tabs-animated {
   .nav-item {
-    margin: 0 divide($layout-spacer-x, 2) 0 0;
+    margin: 0 math.div($layout-spacer-x, 2) 0 0;
   }
 }
 

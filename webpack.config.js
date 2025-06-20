@@ -17,7 +17,8 @@ for (let i = 0; i < pages.length; i++) {
             filename: page.output,
             title: page.content.title,
             heading_icon: page.content.heading_icon,
-            description: page.content.description
+            description: page.content.description,
+            favicon: './src/layout/favicon.ico'
         })
     );
 }
@@ -27,7 +28,7 @@ module.exports = (options) => {
 
     let webpackConfig = {
         mode: 'none',
-        devtool: options.devtool,
+        devtool: options.devtool || 'eval-source-map',
         entry: {
             main: './src/app.js',
             demo: './src/scripts-init/demo.js',
@@ -52,7 +53,8 @@ module.exports = (options) => {
             }),
             new CopyWebpackPlugin({
               patterns: [
-                { from: './src/assets/images', to: './assets/images' }
+                { from: './src/assets/images', to: './assets/images' },
+                { from: './src/layout/favicon.ico', to: './favicon.ico' }
               ]
             }),
             new webpack.DefinePlugin({

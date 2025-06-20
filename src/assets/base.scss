@@ -9,6 +9,11 @@
  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
  */
 
+// SASS MODULES (new syntax)
+@use "sass:map";
+@use "sass:math";
+@use "sass:color";
+
 // BOOTSTRAP 5 VARIABLES
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)

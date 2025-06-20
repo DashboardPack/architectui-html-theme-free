@@ -6,18 +6,45 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="main-card mb-3 card">
-                        <div class="card-body" style="height: 400px;">
-                        <div class="card-title">World Map</div>
-                        <div id="map" style="position: absolute; top: 47px; left: 0px; height: 300px; width: 575px;">
+                        <div class="card-body">
+                            <div class="card-title">MapBox Satellite Map</div>
+                            <div id="map" style="height: 300px; border-radius: 5px;"></div>
                         </div>
-                    </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="main-card mb-3 card">
                         <div class="card-body">
-                            <div class="card-title">Google Maps</div>
-                            <div id="gmap-example"></div>
+                            <div class="card-title">Interactive Demo Map</div>
+                            <div id="gmap-example" style="height: 300px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="main-card mb-3 card">
+                        <div class="card-body">
+                            <div class="card-title">Multiple Cities Map</div>
+                            <div id="map-multiple-markers" style="height: 300px;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="main-card mb-3 card">
+                        <div class="card-body">
+                            <div class="card-title">Custom Styled Map</div>
+                            <div id="map-custom-styles" style="height: 300px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main-card mb-3 card">
+                        <div class="card-body">
+                            <div class="card-title">Interactive Controls Demo</div>
+                            <div id="map-interactive-demo" style="height: 300px;"></div>
                         </div>
                     </div>
                 </div>
@@ -25,5 +52,4 @@
         </div>
         {{> AppFooter/footer }}
     </div>
-    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
 {{/ base }}
