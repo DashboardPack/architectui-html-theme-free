@@ -14,19 +14,6 @@
     "type": "git",
     "url": "git+https://github.com/DashboardPack/architectui-html-theme-free"
   },
-  "eslintConfig": {
-    "env": {
-      "browser": true,
-      "node": true
-    },
-    "parserOptions": {
-      "ecmaVersion": 2022,
-      "sourceType": "module"
-    },
-    "rules": {
-      "semi": 2
-    }
-  },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
     "@fullcalendar/core": "^6.1.17",
@@ -34,14 +21,14 @@
     "@fullcalendar/interaction": "^6.1.17",
     "@fullcalendar/list": "^6.1.17",
     "@fullcalendar/timegrid": "^6.1.17",
-    "@kurkle/color": "^0.3.4",
+    "@kurkle/color": "^0.4.0",
     "@popperjs/core": "^2.11.8",
     "animate.css": "^4.1.1",
-    "bootstrap": "^5.3.5",
-    "chart.js": "^4.4.8",
+    "bootstrap": "^5.3.7",
+    "chart.js": "^4.5.0",
     "gmaps": "^0.4.25",
     "jquery": "^3.7.1",
-    "mapbox-gl": "^2.15.0",
+    "mapbox-gl": "^3.13.0",
     "metismenu": "^3.0.7",
     "moment": "^2.30.1",
     "pe7-icon": "^1.0.4",
@@ -53,25 +40,25 @@
     "**/event-stream": "^4.0.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.26.10",
-    "@babel/preset-env": "^7.26.9",
+    "@babel/core": "^7.27.4",
+    "@babel/preset-env": "^7.27.2",
     "animate-sass": "^0.8.2",
-    "babel-loader": "^9.2.1",
+    "babel-loader": "^10.0.0",
     "clean-webpack-plugin": "^4.0.0",
-    "copy-webpack-plugin": "^11.0.0",
-    "css-loader": "^6.11.0",
-    "eslint": "^8.57.0",
-    "eslint-webpack-plugin": "^4.2.0",
+    "copy-webpack-plugin": "^13.0.0",
+    "css-loader": "^7.1.2",
+    "eslint": "^9.29.0",
+    "eslint-webpack-plugin": "^5.0.2",
     "file-loader": "^6.2.0",
     "handlebars": "^4.7.8",
     "handlebars-loader": "^1.7.3",
     "html-webpack-plugin": "^5.6.3",
     "mini-css-extract-plugin": "^2.9.2",
-    "sass": "^1.86.3",
-    "sass-loader": "^13.3.3",
-    "style-loader": "^3.3.4",
-    "webpack": "^5.88.2",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.2"
+    "sass": "^1.89.2",
+    "sass-loader": "^16.0.5",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
   }
 }
