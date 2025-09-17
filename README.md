@@ -1,14 +1,24 @@
 # ArchitectUI Bootstrap 5 jQuery/HTML Theme FREE
 ## Made with love by DashboardPack.com
 
-[![npm version](https://img.shields.io/badge/version-4.2.0-blue.svg)](https://github.com/DashboardPack/architectui-html-theme-free)
+[![npm version](https://img.shields.io/badge/version-4.3.0-blue.svg)](https://github.com/DashboardPack/architectui-html-theme-free)
 [![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)](package.json)
 [![Security](https://img.shields.io/badge/security-0%20vulnerabilities-brightgreen.svg)](package.json)
 [![SASS](https://img.shields.io/badge/SASS-modernized-purple.svg)](src/assets/)
 
 ArchitectUI is a **Modern Clean Responsive HTML Bootstrap 5 Admin UI Dashboard Template**. It is used by thousands of developers to build SaaS and various other admin panels for web apps. This version hosted on Github is for preview only. It has a limited functionality in comparison to [Pro version](https://dashboardpack.com/theme-details/architectui-dashboard-html-pro/) yet it comes with unlimited color schemes and flexibility unmatched to most other Premium admin dashboards.
 
-## ✨ What's New in v4.2.0
+## What's New in v4.3.0
+
+### **Dependency Updates (September 2025)**
+- **FontAwesome 7** - Major upgrade from 6.7.2 to 7.0.1 with full compatibility
+- **Latest Build Tools** - Webpack 5.101.3, Sass 1.92.1, ESLint 9.35.0
+- **Security** - Zero vulnerabilities with all dependencies updated
+- **Bootstrap** - Updated to 5.3.8 with latest patches
+
+See [CHANGELOG.md](Changelog.md) for complete details.
+
+## Previous Release: v4.2.0
 
 ### 🚀 **Complete Modernization**
 - **Latest Dependencies** - All npm packages updated to current versions
@@ -73,11 +83,12 @@ This created another folder in the root of your project named build. You'll have
 ## 🎯 **Key Features**
 
 ### **Modern Technology Stack**
-- **Bootstrap 5.3.7** - Latest version with all features
+- **Bootstrap 5.3.8** - Latest version with all features
 - **jQuery 3.7.1** - Reliable and performant
 - **Chart.js 4.5.0** - Beautiful data visualizations
-- **SASS 1.89.2** - Modern CSS preprocessing
-- **Webpack 5.99.9** - Latest build tooling
+- **FontAwesome 7.0.1** - Latest icon library version
+- **SASS 1.92.1** - Modern CSS preprocessing
+- **Webpack 5.101.3** - Latest build tooling
 
 ### **Components & Features**
 - ✅ **Responsive Design** - Mobile-first approach
@@ -120,7 +131,8 @@ This version includes breaking improvements. For existing projects:
 3. **Review SASS changes** if you've customized themes
 4. **Test your maps** - new implementation may require updates
 
-## 📈 **Version History**
+## **Version History**
+- **v4.3.0** (2025-09-17) - FontAwesome 7 upgrade, complete dependency refresh
 - **v4.2.0** (2025-06-20) - Complete modernization, SASS future-proofing, enhanced maps
 - **v4.0.0** (2023-10-17) - React v18 migration, dependency upgrades  
 - **v3.1.0** (2022-08-22) - Library updates

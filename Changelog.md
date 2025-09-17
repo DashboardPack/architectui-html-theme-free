@@ -2,6 +2,51 @@
 
 All notable changes to this project will be documented in this file.
 
+## [4.3.0] - 2025-09-17
+
+### Major Updates
+- **Complete dependency refresh** - All packages updated to September 2025 versions
+- **FontAwesome 7 migration** - Successfully upgraded from FontAwesome 6.7.2 to 7.0.1
+- **Latest build tools** - Webpack, Sass, and ESLint updated to current versions
+- **Zero vulnerabilities** - All security issues resolved with latest dependencies
+
+### Package Updates
+
+#### Production Dependencies
+- **@fortawesome/fontawesome-free**: 6.7.2 → 7.0.1 (major version upgrade)
+- **Bootstrap**: 5.3.7 → 5.3.8
+- **@fullcalendar/core**: 6.1.17 → 6.1.19
+- **@fullcalendar/daygrid**: 6.1.17 → 6.1.19
+- **@fullcalendar/interaction**: 6.1.17 → 6.1.19
+- **@fullcalendar/list**: 6.1.17 → 6.1.19
+- **@fullcalendar/timegrid**: 6.1.17 → 6.1.19
+- **@googlemaps/js-api-loader**: 1.16.8 → 1.16.10
+
+#### Development Dependencies
+- **@babel/core**: 7.27.4 → 7.28.4
+- **@babel/preset-env**: 7.27.2 → 7.28.3
+- **ESLint**: 9.29.0 → 9.35.0
+- **Sass**: 1.89.2 → 1.92.1
+- **Webpack**: 5.99.9 → 5.101.3
+- **Mini CSS Extract Plugin**: 2.9.2 → 2.9.4
+
+### Technical Improvements
+- **FontAwesome 7 Integration**: Updated SASS configuration to use new module syntax with proper namespacing
+- **Build Optimization**: Both development and production builds compile successfully
+- **Compatibility**: Resolved variable conflicts between FontAwesome 7 and Bootstrap 5
+- **Font Loading**: Fixed webfont path resolution for FontAwesome 7
+
+### Bug Fixes
+- Fixed FontAwesome 7 font path issues with new Sass module configuration
+- Resolved SASS variable conflicts by namespacing FontAwesome imports
+- Corrected webfont loading paths for production builds
+
+### Verified Functionality
+- Development server runs without errors
+- Production build completes successfully
+- All HTML pages generate properly
+- FontAwesome icons render correctly on all pages
+
 ## [4.2.0] - 2025-06-20
 
 ### 🚀 Major Updates
