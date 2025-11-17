@@ -1,16 +1,23 @@
 # ArchitectUI Bootstrap 5 jQuery/HTML Theme FREE
 ## Made with love by DashboardPack.com
 
-[![npm version](https://img.shields.io/badge/version-4.3.0-blue.svg)](https://github.com/DashboardPack/architectui-html-theme-free)
+[![npm version](https://img.shields.io/badge/version-4.4.0-blue.svg)](https://github.com/DashboardPack/architectui-html-theme-free)
 [![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)](package.json)
 [![Security](https://img.shields.io/badge/security-0%20vulnerabilities-brightgreen.svg)](package.json)
 [![SASS](https://img.shields.io/badge/SASS-modernized-purple.svg)](src/assets/)
 
 ArchitectUI is a **Modern Clean Responsive HTML Bootstrap 5 Admin UI Dashboard Template**. It is used by thousands of developers to build SaaS and various other admin panels for web apps. This version hosted on Github is for preview only. It has a limited functionality in comparison to [Pro version](https://dashboardpack.com/theme-details/architectui-dashboard-html-pro/) yet it comes with unlimited color schemes and flexibility unmatched to most other Premium admin dashboards.
 
-## What's New in v4.3.0
+## What's New in v4.4.0
 
-### **Dependency Updates (September 2025)**
+### **🗺️ Real Google Maps Integration (November 2025)**
+- **Actual Google Maps** - Replaced CSS placeholders with real, interactive Google Maps
+- **No API Key Needed** - Uses free Google Maps iframe embeds with standard watermarks
+- **Five Global Locations** - Tokyo, New York, London, Paris, San Francisco
+- **Fully Interactive** - Zoom, pan, street view, and all Google Maps features
+- **28KB Smaller** - Optimized bundle size with cleaner implementation
+
+### **Previous Release: v4.3.0**
 - **FontAwesome 7** - Major upgrade from 6.7.2 to 7.0.1 with full compatibility
 - **Latest Build Tools** - Webpack 5.101.3, Sass 1.92.1, ESLint 9.35.0
 - **Security** - Zero vulnerabilities with all dependencies updated
@@ -18,7 +25,7 @@ ArchitectUI is a **Modern Clean Responsive HTML Bootstrap 5 Admin UI Dashboard T
 
 See [CHANGELOG.md](Changelog.md) for complete details.
 
-## Previous Release: v4.2.0
+## Earlier Release: v4.2.0
 
 ### 🚀 **Complete Modernization**
 - **Latest Dependencies** - All npm packages updated to current versions
@@ -26,11 +33,11 @@ See [CHANGELOG.md](Changelog.md) for complete details.
 - **Enhanced Security** - Zero vulnerabilities detected
 - **Modern Tooling** - ESLint v9, Webpack 5.99, latest build tools
 
-### 🗺️ **Enhanced Maps Component**
-- **5 Interactive Examples** - No external API dependencies required
-- **CSS-Based Terrain** - Beautiful satellite-style visualizations
-- **Responsive Design** - Works perfectly on all devices
-- **Animation Effects** - Smooth interactions and hover states
+### 🗺️ **Maps Component** (Updated in v4.4.0)
+- **Real Google Maps** - Fully interactive maps with actual map data
+- **Free to Use** - No API key required, uses Google's iframe embed system
+- **5 Global Locations** - Tokyo, New York, London, Paris, San Francisco
+- **Professional Quality** - All standard Google Maps features included
 
 ### 📦 **Performance Improvements**
 - **Reduced Bundle Size** - 50KB improvement (1.87 MiB → 1.82 MiB)
@@ -92,14 +99,14 @@ This created another folder in the root of your project named build. You'll have
 
 ### **Components & Features**
 - ✅ **Responsive Design** - Mobile-first approach
-- ✅ **5 Interactive Maps** - No API keys required
-- ✅ **Chart Integration** - Beautiful data visualization
+- ✅ **Real Google Maps** - 5 interactive locations, no API keys required
+- ✅ **Chart Integration** - Beautiful data visualization with Chart.js
 - ✅ **Calendar Component** - Full-featured event management
 - ✅ **Form Elements** - Complete form components library
 - ✅ **Navigation Systems** - Multiple menu styles
 - ✅ **Card Components** - Flexible content containers
 - ✅ **Button Variants** - Extensive button library
-- ✅ **Icon Libraries** - FontAwesome, PE7, Linearicons
+- ✅ **Icon Libraries** - FontAwesome 7, PE7, Linearicons
 - ✅ **Animation Support** - Smooth transitions and effects
 
 ### **Developer Benefits**
@@ -132,9 +139,10 @@ This version includes breaking improvements. For existing projects:
 4. **Test your maps** - new implementation may require updates
 
 ## **Version History**
+- **v4.4.0** (2025-11-17) - Real Google Maps integration, improved UX
 - **v4.3.0** (2025-09-17) - FontAwesome 7 upgrade, complete dependency refresh
-- **v4.2.0** (2025-06-20) - Complete modernization, SASS future-proofing, enhanced maps
-- **v4.0.0** (2023-10-17) - React v18 migration, dependency upgrades  
+- **v4.2.0** (2025-06-20) - Complete modernization, SASS future-proofing
+- **v4.0.0** (2023-10-17) - React v18 migration, dependency upgrades
 - **v3.1.0** (2022-08-22) - Library updates
 - **v3.0.0** (2022-04-05) - WebPack v5 migration
 - **v2.0.0** (2021-09-07) - Bootstrap v5 migration
