@@ -311,10 +311,10 @@ a.avatar-icon-wrapper {
 
 @-webkit-keyframes sploosh {
   0% {
-    box-shadow: 0 0 0 0px rgba(#333, .2);
+    box-shadow: 0 0 0 0px rgba($gray-800, .2);
   }
   100% {
-    box-shadow: 0 0 0 8px rgba(#333, 0);
+    box-shadow: 0 0 0 8px rgba($gray-800, 0);
   }
 }
 

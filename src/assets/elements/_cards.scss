@@ -17,15 +17,15 @@
   &.text-white {
     .card-footer,
     .card-header {
-      background: rgba(255, 255, 255, .1);
-      color: rgba(255, 255, 255, .9);
+      background: rgba($white, .1);
+      color: rgba($white, .9);
     }
   }
 
   &.text-dark.text-white {
     .card-footer,
     .card-header {
-      color: rgba(0, 0, 0, .9);
+      color: rgba($black, .9);
     }
   }
 

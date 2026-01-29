@@ -1,21 +1,22 @@
 // Sidebar Light
+// Uses SASS rgba() with $white variable for consistent color management
 
 .app-sidebar {
   &.sidebar-text-light {
     border-right: 0 !important;
 
     .app-sidebar__heading {
-      color: rgba(255, 255, 255, .6);
+      color: rgba($white, .6);
 
       &::before {
-        background: rgba(255, 255, 255, 0.5) !important;
+        background: rgba($white, 0.5) !important;
       }
     }
 
     .vertical-nav-menu {
       li {
         a {
-          color: rgba(255, 255, 255, 0.7);
+          color: rgba($white, 0.7);
           i.metismenu-icon {
             opacity: .5;
           }
@@ -25,8 +26,8 @@
           }
 
           &:hover {
-            background: rgba(255, 255, 255, 0.15);
-            color: rgba(255, 255, 255, 1);
+            background: rgba($white, 0.15);
+            color: $white;
 
             i.metismenu-icon {
               opacity: .8;
@@ -39,38 +40,38 @@
         }
 
         a.mm-active {
-          color: rgba(255, 255, 255, 0.7);
-          background: rgba(255, 255, 255, 0.15);
+          color: rgba($white, 0.7);
+          background: rgba($white, 0.15);
         }
       }
 
       ul {
         &:before {
-          background: rgba(255, 255, 255, 0.1);
+          background: rgba($white, 0.1);
         }
 
         & > li > a {
-          color: rgba(255, 255, 255, 0.6);
+          color: rgba($white, 0.6);
 
           &:hover {
-            color: rgba(255, 255, 255, 1);
+            color: $white;
           }
 
           &.mm-active {
-            color: rgba(255, 255, 255, 1);
-            background: rgba(255, 255, 255, 0.15);
+            color: $white;
+            background: rgba($white, 0.15);
           }
         }
       }
     }
 
     .ps__thumb-y {
-      background: rgba(255, 255, 255, .3);
+      background: rgba($white, .3);
     }
 
     .ps__rail-y:hover {
       .ps__thumb-y {
-        background: rgba(255, 255, 255, .2);
+        background: rgba($white, .2);
       }
     }
 
@@ -82,7 +83,7 @@
       .hamburger-inner,
       .hamburger-inner::before,
       .hamburger-inner::after {
-        background-color: rgba(255, 255, 255, .8);
+        background-color: rgba($white, .8);
       }
     }
   }

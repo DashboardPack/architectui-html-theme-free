@@ -1,11 +1,11 @@
 // Theme White
+// Uses SASS variables for consistent color management
 
 // Variables
-
-$app-container-bg: #f1f4f6;
-$app-sidebar-bg: #ffffff;
-$app-header-bg: #fafbfc;
-$app-header-logo-bg: rgba(255, 255, 255, .9);
+$app-container-bg: $gray-100;
+$app-sidebar-bg: $white;
+$app-header-bg: tint-color($gray-100, 50%);
+$app-header-logo-bg: rgba($white, .9);
 
 // Content
 
@@ -20,7 +20,7 @@ $app-header-logo-bg: rgba(255, 255, 255, .9);
   }
 
   .app-page-title {
-    background: rgba(255, 255, 255, .45);
+    background: rgba($white, .45);
   }
 
   .app-footer .app-footer__inner,

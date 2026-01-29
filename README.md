@@ -6,7 +6,7 @@
 [![Security](https://img.shields.io/badge/security-0%20vulnerabilities-brightgreen.svg)](package.json)
 [![SASS](https://img.shields.io/badge/SASS-modernized-purple.svg)](src/assets/)
 
-ArchitectUI is a **Modern Clean Responsive HTML Bootstrap 5 Admin UI Dashboard Template**. It is used by thousands of developers to build SaaS and various other admin panels for web apps. This version hosted on Github is for preview only. It has a limited functionality in comparison to [Pro version](https://dashboardpack.com/theme-details/architectui-dashboard-html-pro/) yet it comes with unlimited color schemes and flexibility unmatched to most other Premium admin dashboards.
+ArchitectUI is a **Modern Clean Responsive HTML Bootstrap 5 Admin UI Dashboard Template**. It is used by thousands of developers to build SaaS and various other admin panels for web apps. This version hosted on Github is for preview only. It has a limited functionality in comparison to [Pro version](https://dashboardpack.com/theme-details/architectui-dashboard-html-pro/?utm_source=github&utm_medium=readme&utm_campaign=architectui-html-upgrade&utm_content=intro-link) yet it comes with unlimited color schemes and flexibility unmatched to most other Premium admin dashboards.
 
 ## What's New in v4.5.0
 
@@ -49,7 +49,7 @@ See [CHANGELOG.md](Changelog.md) for complete details.
 - **Clean Development** - Professional console output without noise
 - **Security First** - All dependencies audited and updated
 
-## PRO Version Available [here](https://dashboardpack.com/theme-details/architectui-dashboard-html-pro/)
+## PRO Version Available [here](https://dashboardpack.com/theme-details/architectui-dashboard-html-pro/?utm_source=github&utm_medium=readme&utm_campaign=architectui-html-upgrade&utm_content=pro-banner) 🏆
 
 ## Preview
 
@@ -154,7 +154,7 @@ Licensed under MIT. See [LICENSE](LICENSE) for details.
 
 ## 🔗 **Links**
 - **Website**: [DashboardPack.com](https://dashboardpack.com)
-- **Pro Version**: [ArchitectUI Pro](https://dashboardpack.com/theme-details/architectui-dashboard-html-pro/)
+- **Pro Version**: [ArchitectUI Pro](https://dashboardpack.com/theme-details/architectui-dashboard-html-pro/?utm_source=github&utm_medium=readme&utm_campaign=architectui-html-upgrade&utm_content=footer-link)
 - **Documentation**: Available with Pro version
 - **Support**: [Contact Support](https://dashboardpack.com/contact)
 

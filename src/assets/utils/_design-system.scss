@@ -1,0 +1,104 @@
+// =============================================================================
+// DESIGN SYSTEM UTILITIES
+// =============================================================================
+// Centralized utility classes for consistent styling across components.
+// Replaces inline styles with reusable CSS classes.
+// =============================================================================
+
+// -----------------------------------------------------------------------------
+// OPACITY VARIABLES
+// -----------------------------------------------------------------------------
+// Standardized opacity values to replace hardcoded rgba() throughout SCSS.
+// Usage: rgba($white, $opacity-high) instead of rgba(255, 255, 255, 0.9)
+
+$opacity-lowest: 0.03;
+$opacity-low: 0.1;
+$opacity-medium-low: 0.15;
+$opacity-medium: 0.3;
+$opacity-medium-high: 0.5;
+$opacity-high: 0.7;
+$opacity-higher: 0.8;
+$opacity-highest: 0.9;
+
+// Overlay opacity map for programmatic access
+$opacity-scale: (
+  "lowest": $opacity-lowest,
+  "low": $opacity-low,
+  "medium-low": $opacity-medium-low,
+  "medium": $opacity-medium,
+  "medium-high": $opacity-medium-high,
+  "high": $opacity-high,
+  "higher": $opacity-higher,
+  "highest": $opacity-highest
+);
+
+// -----------------------------------------------------------------------------
+// CONTAINER HEIGHT UTILITIES
+// -----------------------------------------------------------------------------
+// Replaces inline style="height: XXXpx;" for charts, maps, and widgets
+
+.chart-container {
+  height: 320px;
+}
+
+.chart-container-sm {
+  height: 227px;
+}
+
+.chart-container-lg {
+  height: 300px;
+}
+
+.map-container {
+  height: 300px;
+  border-radius: $border-radius;
+}
+
+.widget-chart-container {
+  height: 350px;
+}
+
+// -----------------------------------------------------------------------------
+// SPACING UTILITIES
+// -----------------------------------------------------------------------------
+// Replaces inline style="margin-bottom: 30px;" and similar
+
+.divider-spacing {
+  margin-bottom: 30px;
+}
+
+.section-spacing {
+  margin-bottom: 1.5rem;
+}
+
+// -----------------------------------------------------------------------------
+// CARD VARIANTS
+// -----------------------------------------------------------------------------
+// Standardized card styling for dark backgrounds
+
+.card-dark {
+  background-color: rgb(51, 51, 51);
+  border-color: rgb(51, 51, 51);
+  color: $white;
+}
+
+// -----------------------------------------------------------------------------
+// SHADOW UTILITIES
+// -----------------------------------------------------------------------------
+// Quick-access shadow classes using theme variables
+
+.shadow-theme {
+  box-shadow: $box-shadow-default;
+}
+
+.shadow-theme-right {
+  box-shadow: $box-shadow-default-right;
+}
+
+.shadow-theme-inverse {
+  box-shadow: $box-shadow-default-inverse;
+}
+
+.shadow-none {
+  box-shadow: none !important;
+}

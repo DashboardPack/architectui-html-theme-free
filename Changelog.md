@@ -40,9 +40,48 @@ All notable changes to this project will be documented in this file.
 - **Zero vulnerabilities** - All packages audited and secure
 - **lodash** updated to fix prototype pollution vulnerability
 
+### 🎨 Design System Improvements
+
+#### New Utility Classes
+
+- **New design-system utilities SCSS** - Centralized utility classes for consistent styling
+- **Container height utilities** - `.chart-container`, `.chart-container-sm`, `.chart-container-lg`, `.map-container`
+- **Spacing utilities** - `.divider-spacing` replaces inline `margin-bottom: 30px`
+- **Card variants** - `.card-dark` for dark background cards
+- **Shadow utilities** - `.shadow-theme`, `.shadow-theme-right`, `.shadow-theme-inverse`
+- **Opacity scale variables** - Standardized opacity values for consistent transparency
+- **Replaced 20+ inline styles** with utility classes across templates
+
+#### Color Consistency (50+ fixes)
+
+- **Replaced hardcoded rgba() values** with SASS variables across all theme files
+- **Sidebar themes** - Now use `rgba($white, .x)` and `rgba($black, .x)` instead of numeric values
+- **Header themes** - Consistent color management with SASS variables
+- **Main themes** - Use Bootstrap gray scale variables (`$gray-100`, `$gray-800`, etc.)
+- **Buttons** - Fixed hardcoded `#f5f5f5` to use `$light` variable
+- **Cards/Popovers** - Consistent black/white rgba values
+- **Badges** - Fixed `rgba(#333)` to use `$gray-800`
+- **Helpers** - Updated hardcoded colors to SASS variables
+- **Toastr** - Fixed hardcoded `#cccccc` to `$gray-400`
+
+#### New Button Shadow Mixin
+
+- Added `@mixin btn-shadow($color, $intensity)` for consistent button shadows
+- Supports 'default', 'hover', and 'outline-hover' intensity levels
+
+### 🛠️ Dashboard Improvements
+
+- **Functional card tabs** - Dashboard card tabs now work with Bootstrap 5 native tab system
+- **Sales Report card** - Added working "Last" and "Current" tabs with different content
+- **Bandwidth Reports card** - Added working "Tab 1" and "Tab 2" with network statistics
+- Uses proper `data-bs-toggle="tab"` attributes for Bootstrap 5 compatibility
+
 ### 🔧 Code Changes
+
 - Refactored `src/app.js` dropdown click handler for jQuery 4.0 compatibility
 - Removed usage of undocumented `$._data()` internal API
+- Added `expose-loader` to webpack config for proper jQuery global exposure with ES modules
+- Updated webpack ProvidePlugin to use `['jquery', 'default']` syntax for jQuery 4.0
 
 ## [4.4.0] - 2025-11-17
 

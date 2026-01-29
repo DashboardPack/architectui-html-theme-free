@@ -65,6 +65,17 @@
   }
 }
 
+// Header menu nav links (Bootstrap 5 defaults to blue link color)
+.header-menu.nav {
+  .nav-link {
+    color: $gray-600;
+
+    &:hover {
+      color: $gray-800;
+    }
+  }
+}
+
 .nav-pills {
   .nav-link {
 

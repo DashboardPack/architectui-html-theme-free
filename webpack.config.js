@@ -44,12 +44,10 @@ module.exports = (options) => {
         },
         plugins: [
             new webpack.ProvidePlugin({
-                $: 'jquery',
-                jQuery: 'jquery',
-                'window.jQuery': 'jquery',
-                Tether: 'tether',
-                'window.Tether': 'tether',
-                Popper: ['popper.js', 'default'],
+                $: ['jquery', 'default'],
+                jQuery: ['jquery', 'default'],
+                'window.jQuery': ['jquery', 'default'],
+                'window.$': ['jquery', 'default'],
             }),
             new CopyWebpackPlugin({
               patterns: [
@@ -65,6 +63,14 @@ module.exports = (options) => {
         ],
         module: {
             rules: [
+                {
+                    // Expose jQuery globally for Bootstrap and other plugins
+                    test: require.resolve('jquery'),
+                    loader: 'expose-loader',
+                    options: {
+                        exposes: ['$', 'jQuery'],
+                    },
+                },
                 {
                     test: /\.js$/,
                     exclude: /node_modules/,

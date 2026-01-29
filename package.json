@@ -47,6 +47,7 @@
     "css-loader": "^7.1.3",
     "eslint": "^9.39.2",
     "eslint-webpack-plugin": "^5.0.2",
+    "expose-loader": "^5.0.1",
     "file-loader": "^6.2.0",
     "handlebars": "^4.7.8",
     "handlebars-loader": "^1.7.3",

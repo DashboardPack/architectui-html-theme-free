@@ -43,7 +43,8 @@
 
   li {
     a {
-      display: block;
+      display: flex;
+      align-items: center;
       line-height: 2.4rem;
       height: 2.4rem;
       padding: 0 $layout-spacer-x 0 45px;

@@ -148,17 +148,11 @@ $popover-header-bg: $white;
 
 $link-color: $primary;
 $component-active-bg: $primary;
-$custom-control-indicator-checked-disabled-bg: rgba($primary, .5);
 $form-feedback-valid-color: $success;
 $form-feedback-invalid-color: $danger;
 $progress-bar-bg: $primary;
 $input-btn-focus-color: rgba($component-active-bg, .25);
 $input-focus-border-color: tint-color($component-active-bg, 25%);
-$custom-control-indicator-checked-bg: $component-active-bg;
-$custom-control-indicator-active-bg: tint-color($component-active-bg, 35%);
-$custom-checkbox-indicator-indeterminate-bg: $component-active-bg;
-$custom-range-thumb-bg: $component-active-bg;
-$custom-range-thumb-active-bg: tint-color($component-active-bg, 35%);
 $dropdown-link-active-bg: $component-active-bg;
 $nav-pills-link-active-bg: $component-active-bg;
 $pagination-active-bg: $component-active-bg;
