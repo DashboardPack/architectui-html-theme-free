@@ -2,6 +2,48 @@
 
 All notable changes to this project will be documented in this file.
 
+## [4.5.0] - 2026-01-29
+
+### 🚀 Major Upgrade: jQuery 4.0
+
+- **jQuery 4.0.0** - First major jQuery release in over a decade
+  - Removed deprecated APIs and internal methods
+  - ES modules internally, smaller bundle size
+  - Improved CSP (Content Security Policy) support
+  - Dropped IE 10 and older support
+- **MetisMenu 3.1.0** - Updated to version requiring jQuery 4.0+
+- **Simplified dropdown handler** - Replaced internal `$._data()` API usage with simpler stopPropagation approach
+
+### 📦 Dependency Updates (All Latest Versions)
+
+#### Production Dependencies
+- **jquery**: 3.7.1 → 4.0.0 (major)
+- **metismenu**: 3.0.7 → 3.1.0
+
+#### Development Dependencies
+- **@babel/core**: 7.28.5 → 7.28.6
+- **@babel/preset-env**: 7.28.5 → 7.28.6
+- **@fullcalendar/core**: 6.1.19 → 6.1.20
+- **@fullcalendar/daygrid**: 6.1.19 → 6.1.20
+- **@fullcalendar/interaction**: 6.1.19 → 6.1.20
+- **@fullcalendar/list**: 6.1.19 → 6.1.20
+- **@fullcalendar/timegrid**: 6.1.19 → 6.1.20
+- **css-loader**: 7.1.2 → 7.1.3
+- **eslint**: 9.39.1 → 9.39.2
+- **html-webpack-plugin**: 5.6.4 → 5.6.6
+- **mini-css-extract-plugin**: 2.9.4 → 2.10.0
+- **sass**: 1.94.0 → 1.97.3
+- **webpack**: 5.102.1 → 5.104.1
+- **webpack-dev-server**: 5.2.2 → 5.2.3
+
+### 🔒 Security
+- **Zero vulnerabilities** - All packages audited and secure
+- **lodash** updated to fix prototype pollution vulnerability
+
+### 🔧 Code Changes
+- Refactored `src/app.js` dropdown click handler for jQuery 4.0 compatibility
+- Removed usage of undocumented `$._data()` internal API
+
 ## [4.4.0] - 2025-11-17
 
 ### 🗺️ Maps Component Enhancement

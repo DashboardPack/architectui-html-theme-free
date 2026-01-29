@@ -1,27 +1,25 @@
 # ArchitectUI Bootstrap 5 jQuery/HTML Theme FREE
 ## Made with love by DashboardPack.com
 
-[![npm version](https://img.shields.io/badge/version-4.4.0-blue.svg)](https://github.com/DashboardPack/architectui-html-theme-free)
+[![npm version](https://img.shields.io/badge/version-4.5.0-blue.svg)](https://github.com/DashboardPack/architectui-html-theme-free)
 [![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)](package.json)
 [![Security](https://img.shields.io/badge/security-0%20vulnerabilities-brightgreen.svg)](package.json)
 [![SASS](https://img.shields.io/badge/SASS-modernized-purple.svg)](src/assets/)
 
 ArchitectUI is a **Modern Clean Responsive HTML Bootstrap 5 Admin UI Dashboard Template**. It is used by thousands of developers to build SaaS and various other admin panels for web apps. This version hosted on Github is for preview only. It has a limited functionality in comparison to [Pro version](https://dashboardpack.com/theme-details/architectui-dashboard-html-pro/) yet it comes with unlimited color schemes and flexibility unmatched to most other Premium admin dashboards.
 
-## What's New in v4.4.0
+## What's New in v4.5.0
 
-### **🗺️ Real Google Maps Integration (November 2025)**
-- **Actual Google Maps** - Replaced CSS placeholders with real, interactive Google Maps
-- **No API Key Needed** - Uses free Google Maps iframe embeds with standard watermarks
-- **Five Global Locations** - Tokyo, New York, London, Paris, San Francisco
-- **Fully Interactive** - Zoom, pan, street view, and all Google Maps features
-- **28KB Smaller** - Optimized bundle size with cleaner implementation
+### **🚀 jQuery 4.0 Upgrade (January 2026)**
+- **jQuery 4.0.0** - First major jQuery release in over a decade with modernized internals
+- **MetisMenu 3.1.0** - Updated sidebar menu library with jQuery 4.0 support
+- **All Dependencies Updated** - Every package updated to latest January 2026 versions
+- **Zero Vulnerabilities** - Complete security audit passed
 
-### **Previous Release: v4.3.0**
-- **FontAwesome 7** - Major upgrade from 6.7.2 to 7.0.1 with full compatibility
-- **Latest Build Tools** - Webpack 5.101.3, Sass 1.92.1, ESLint 9.35.0
-- **Security** - Zero vulnerabilities with all dependencies updated
-- **Bootstrap** - Updated to 5.3.8 with latest patches
+### **Previous Release: v4.4.0**
+- **Real Google Maps** - Interactive maps with no API key required
+- **FontAwesome 7** - Latest icon library with full compatibility
+- **Bootstrap 5.3.8** - Latest Bootstrap patches
 
 See [CHANGELOG.md](Changelog.md) for complete details.
 
@@ -91,11 +89,11 @@ This created another folder in the root of your project named build. You'll have
 
 ### **Modern Technology Stack**
 - **Bootstrap 5.3.8** - Latest version with all features
-- **jQuery 3.7.1** - Reliable and performant
-- **Chart.js 4.5.0** - Beautiful data visualizations
-- **FontAwesome 7.0.1** - Latest icon library version
-- **SASS 1.92.1** - Modern CSS preprocessing
-- **Webpack 5.101.3** - Latest build tooling
+- **jQuery 4.0.0** - Major modernization release
+- **Chart.js 4.5.1** - Beautiful data visualizations
+- **FontAwesome 7.1.0** - Latest icon library version
+- **SASS 1.97.3** - Modern CSS preprocessing
+- **Webpack 5.104.1** - Latest build tooling
 
 ### **Components & Features**
 - ✅ **Responsive Design** - Mobile-first approach
@@ -139,6 +137,7 @@ This version includes breaking improvements. For existing projects:
 4. **Test your maps** - new implementation may require updates
 
 ## **Version History**
+- **v4.5.0** (2026-01-29) - jQuery 4.0 upgrade, all dependencies updated
 - **v4.4.0** (2025-11-17) - Real Google Maps integration, improved UX
 - **v4.3.0** (2025-09-17) - FontAwesome 7 upgrade, complete dependency refresh
 - **v4.2.0** (2025-06-20) - Complete modernization, SASS future-proofing

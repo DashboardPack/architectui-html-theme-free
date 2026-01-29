@@ -27,23 +27,10 @@ $(document).ready(() => {
     });
 
     // Stop Bootstrap 5 Dropdown for closing on click inside
+    // Note: For more granular control, use data-bs-auto-close="false" or "outside" on dropdown toggles
 
     $('.dropdown-menu').on('click', function (event) {
-        var events = $._data(document, 'events') || {};
-        events = events.click || [];
-        for (var i = 0; i < events.length; i++) {
-            if (events[i].selector) {
-
-                if ($(event.target).is(events[i].selector)) {
-                    events[i].handler.call(event.target, event);
-                }
-
-                $(event.target).parents(events[i].selector).each(function () {
-                    events[i].handler.call(this, event);
-                });
-            }
-        }
-        event.stopPropagation(); //Always stop propagation
+        event.stopPropagation();
     });
 
     var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
