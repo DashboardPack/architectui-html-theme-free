@@ -5,10 +5,22 @@ import "./chartsjs-utils";
 // Store chart instances for cleanup during HMR
 const chartInstances = {};
 
+// Check if element is visible (not in hidden tab)
+function isElementVisible(element) {
+  if (!element) return false;
+  const rect = element.getBoundingClientRect();
+  return rect.width > 0 && rect.height > 0;
+}
+
 // Destroy existing chart if it exists (for HMR support)
 function getOrCreateChart(canvasId, config) {
   const canvas = document.getElementById(canvasId);
   if (!canvas) return null;
+
+  // Skip if canvas is in a hidden tab (has zero dimensions)
+  if (!isElementVisible(canvas)) {
+    return null;
+  }
 
   // Destroy existing chart instance if it exists
   if (chartInstances[canvasId]) {
@@ -567,11 +579,105 @@ function initCharts() {
   }, 500);
 }
 
+// Chart configs for deferred initialization (charts in hidden tabs)
+const deferredCharts = {
+  'chart-horiz-bar': {
+    type: "bar",
+    data: horizontalBarChartData,
+    options: {
+      indexAxis: 'y',
+      elements: {
+        bar: {
+          borderWidth: 2,
+        }
+      },
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          position: "right",
+        },
+        title: {
+          display: false,
+          text: "Chart.js Horizontal Bar Chart",
+        },
+      },
+    },
+  },
+  'line-chart-2': {
+    type: "line",
+    data: lineChartData2,
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          display: false,
+        },
+        title: {
+          display: false,
+          text: 'Chart.js Line Chart 2'
+        },
+      },
+      scales: {
+        x: {
+          display: false,
+          grid: {
+            display: false,
+          },
+        },
+        y: {
+          display: false,
+          grid: {
+            display: false,
+          },
+        },
+      },
+      layout: {
+        padding: {
+          left: 10,
+          right: 10,
+          top: 10,
+          bottom: 0,
+        },
+      },
+    },
+  }
+};
+
+// Initialize charts in tabs when they become visible
+function initTabCharts() {
+  document.querySelectorAll('[data-bs-toggle="tab"]').forEach(function(tab) {
+    tab.addEventListener('shown.bs.tab', function(event) {
+      const targetId = event.target.getAttribute('href');
+      if (!targetId) return;
+
+      const targetPane = document.querySelector(targetId);
+      if (!targetPane) return;
+
+      // Find any canvas elements in the newly shown tab
+      targetPane.querySelectorAll('canvas').forEach(function(canvas) {
+        const canvasId = canvas.id;
+        if (canvasId && deferredCharts[canvasId] && !chartInstances[canvasId]) {
+          // Small delay to ensure tab is fully visible
+          setTimeout(function() {
+            getOrCreateChart(canvasId, deferredCharts[canvasId]);
+          }, 100);
+        }
+      });
+    });
+  });
+}
+
 // Initialize on page load
 if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', initCharts);
+  document.addEventListener('DOMContentLoaded', function() {
+    initCharts();
+    initTabCharts();
+  });
 } else {
   initCharts();
+  initTabCharts();
 }
 
 // Support for webpack HMR
