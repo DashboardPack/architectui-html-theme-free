@@ -29,6 +29,7 @@ All notable changes to this project will be documented in this file.
 - **@fullcalendar/list**: 6.1.19 → 6.1.20
 - **@fullcalendar/timegrid**: 6.1.19 → 6.1.20
 - **css-loader**: 7.1.2 → 7.1.3
+- **css-minimizer-webpack-plugin**: 7.0.4 (new)
 - **eslint**: 9.39.1 → 9.39.2
 - **html-webpack-plugin**: 5.6.4 → 5.6.6
 - **mini-css-extract-plugin**: 2.9.4 → 2.10.0
@@ -39,6 +40,34 @@ All notable changes to this project will be documented in this file.
 ### 🔒 Security
 - **Zero vulnerabilities** - All packages audited and secure
 - **lodash** updated to fix prototype pollution vulnerability
+
+### 🏗️ Production Build Fixes
+
+- **Fixed CSS extraction** - Production builds now properly extract CSS to separate file
+  - CSS output: `./assets/styles/main.css` (462KB minified)
+  - HTML pages now include `<link>` tag for CSS
+- **Added CSS minification** - Using `css-minimizer-webpack-plugin` for optimal CSS compression
+- **Fixed webpack configuration**:
+  - Updated to use `--env production/development` flags
+  - Fixed deprecated `CleanWebpackPlugin` API usage
+  - Fixed `MiniCssExtractPlugin.loader` syntax (replaced deprecated `.extract()`)
+  - Set proper `mode: 'production'` for production builds
+- **Modern browser targeting** - Updated `.babelrc` to target only modern browsers
+  - Targets: last 2 versions of Chrome, Firefox, Safari, Edge
+  - Eliminates unnecessary polyfills (~9KB savings)
+  - Removes `@babel/plugin-transform-classes` transforms
+  - Removes `Array.prototype.indexOf` polyfills
+
+### 📊 Chart.js Improvements
+
+- **Fixed HMR error** - Resolved "Cannot set properties of undefined" error on initial page load
+- **Fixed NaN error in production** - Charts in hidden tabs no longer cause `scale(NaN)` errors
+- **Deferred chart initialization** - Charts in hidden tabs are only created when tabs become visible
+  - Added `isElementVisible()` check before creating charts
+  - Added `shown.bs.tab` event listener for lazy chart initialization
+- **Added charts to secondary tabs**:
+  - Sales Report "Current" tab: Horizontal bar chart with categories
+  - Bandwidth Reports "Tab 2": Line chart with bandwidth in/out data
 
 ### 🎨 Design System Improvements
 
@@ -72,9 +101,10 @@ All notable changes to this project will be documented in this file.
 ### 🛠️ Dashboard Improvements
 
 - **Functional card tabs** - Dashboard card tabs now work with Bootstrap 5 native tab system
-- **Sales Report card** - Added working "Last" and "Current" tabs with different content
-- **Bandwidth Reports card** - Added working "Tab 1" and "Tab 2" with network statistics
+- **Sales Report card** - Added working "Last" and "Current" tabs with Chart.js visualizations
+- **Bandwidth Reports card** - Added working "Tab 1" and "Tab 2" with line charts
 - Uses proper `data-bs-toggle="tab"` attributes for Bootstrap 5 compatibility
+- **Consistent tab sizing** - Secondary tabs have matching content to prevent resize on switch
 
 ### 🔧 Code Changes
 
@@ -82,6 +112,21 @@ All notable changes to this project will be documented in this file.
 - Removed usage of undocumented `$._data()` internal API
 - Added `expose-loader` to webpack config for proper jQuery global exposure with ES modules
 - Updated webpack ProvidePlugin to use `['jquery', 'default']` syntax for jQuery 4.0
+- Updated `package.json` scripts to pass environment flags to webpack
+- Updated version to v4.5.0 in `base.hbs` HTML comment header
+
+### 📁 Build Output
+
+| File            | Size  |
+| --------------- | ----- |
+| main.css        | 462KB |
+| main.js         | 161KB |
+| chart_js.js     | 216KB |
+| fullcalendar.js | 260KB |
+| scrollbar.js    | 95KB  |
+| toastr.js       | 86KB  |
+| maps.js         | 80KB  |
+| demo.js         | 78KB  |
 
 ## [4.4.0] - 2025-11-17
 
