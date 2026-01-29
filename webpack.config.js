@@ -3,8 +3,8 @@ const Path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const ExtractSASS = new MiniCssExtractPlugin({filename:'./[name].css'});
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const pages = require('./src/pages');
@@ -23,12 +23,13 @@ for (let i = 0; i < pages.length; i++) {
     );
 }
 
-module.exports = (options) => {
+module.exports = (env) => {
+    const isProduction = env && env.production;
     const dest = Path.join(__dirname, 'architectui-html-free');
 
     let webpackConfig = {
-        mode: 'none',
-        devtool: options.devtool || 'eval-source-map',
+        mode: isProduction ? 'production' : 'development',
+        devtool: isProduction ? false : 'eval-source-map',
         entry: {
             main: './src/app.js',
             demo: './src/scripts-init/demo.js',
@@ -57,7 +58,7 @@ module.exports = (options) => {
             }),
             new webpack.DefinePlugin({
                 'process.env': {
-                    NODE_ENV: JSON.stringify(options.isProduction ? 'production' : 'development')
+                    NODE_ENV: JSON.stringify(isProduction ? 'production' : 'development')
                 }
             })
         ],
@@ -101,36 +102,36 @@ module.exports = (options) => {
         }
     };
 
-    if (options.isProduction) {
-        webpackConfig.entry = [
-            './src/app.js',
-            './src/scripts-init/demo.js',
-            './src/scripts-init/toastr.js',
-            './src/scripts-init/scrollbar.js',
-            './src/scripts-init/calendar.js',
-            './src/scripts-init/maps.js',
-            './src/scripts-init/charts/chartjs.js',
-        ];
-
+    if (isProduction) {
         webpackConfig.plugins.push(
-            ExtractSASS,
-            new CleanWebpackPlugin([dest], {
-                verbose: true,
-                dry: false
+            new CleanWebpackPlugin(),
+            new MiniCssExtractPlugin({
+                filename: './assets/styles/main.css'
             })
         );
 
+        webpackConfig.optimization = {
+            minimizer: [
+                `...`,  // Extends existing minimizers (i.e. terser for JS)
+                new CssMinimizerPlugin(),
+            ],
+        };
+
         webpackConfig.module.rules.push({
             test: /\.scss$/i,
-            use: ExtractSASS.extract(['css-loader',           {
-                loader: "sass-loader",
-                options: {
-                  warnRuleAsWarning: false,
-                },
-            }])
+            use: [
+                MiniCssExtractPlugin.loader,
+                'css-loader',
+                {
+                    loader: "sass-loader",
+                    options: {
+                        warnRuleAsWarning: false,
+                    },
+                }
+            ]
         }, {
             test: /\.css$/i,
-            use: ExtractSASS.extract(['css-loader'])
+            use: [MiniCssExtractPlugin.loader, 'css-loader']
         });
 
     } else {
@@ -154,7 +155,7 @@ module.exports = (options) => {
         );
 
         webpackConfig.devServer = {
-            port: options.port,
+            port: 8080,
             historyApiFallback: true,
             hot: true,
             static: {
