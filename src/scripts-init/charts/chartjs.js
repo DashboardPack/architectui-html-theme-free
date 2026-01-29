@@ -236,6 +236,31 @@ const lineChartData = {
   ],
 };
 
+// Line Chart Data 2 (for Tab 2)
+const lineChartData2 = {
+  labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+  datasets: [
+    {
+      label: "Bandwidth In",
+      borderColor: window.chartColors.green,
+      borderWidth: 2,
+      tension: 0.4,
+      fill: false,
+      pointRadius: 3,
+      data: [42, 58, 65, 79, 82, 75, 88, 95, 87, 92, 98, 105],
+    },
+    {
+      label: "Bandwidth Out",
+      borderColor: window.chartColors.orange,
+      borderWidth: 2,
+      tension: 0.4,
+      fill: false,
+      pointRadius: 3,
+      data: [35, 42, 55, 62, 68, 72, 78, 82, 76, 85, 89, 94],
+    },
+  ],
+};
+
 // Initialize all charts
 function initCharts() {
   // Pie Chart
@@ -441,6 +466,49 @@ function initCharts() {
           title: {
             display: false,
             text: 'Chart.js Line Chart'
+          },
+        },
+        scales: {
+          x: {
+            display: false,
+            grid: {
+              display: false,
+            },
+          },
+          y: {
+            display: false,
+            grid: {
+              display: false,
+            },
+          },
+        },
+        layout: {
+          padding: {
+            left: 10,
+            right: 10,
+            top: 10,
+            bottom: 0,
+          },
+        },
+      },
+    });
+  }, 500);
+
+  // Line Chart 2 (for Bandwidth Tab 2)
+  setTimeout(function () {
+    getOrCreateChart("line-chart-2", {
+      type: "line",
+      data: lineChartData2,
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            display: false,
+          },
+          title: {
+            display: false,
+            text: 'Chart.js Line Chart 2'
           },
         },
         scales: {

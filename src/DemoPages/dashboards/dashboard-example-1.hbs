@@ -204,27 +204,13 @@
                                     <div class="card mb-3 widget-chart widget-chart2 text-start w-100">
                                         <div class="widget-chat-wrapper-outer">
                                             <div class="widget-chart-wrapper widget-chart-wrapper-lg opacity-10 m-0">
-                                                <div class="text-center p-4">
-                                                    <h5 class="text-muted mb-3">Current Period Overview</h5>
-                                                    <div class="row">
-                                                        <div class="col-4">
-                                                            <div class="widget-numbers text-success">+24%</div>
-                                                            <div class="text-muted">Sales</div>
-                                                        </div>
-                                                        <div class="col-4">
-                                                            <div class="widget-numbers text-primary">847</div>
-                                                            <div class="text-muted">Orders</div>
-                                                        </div>
-                                                        <div class="col-4">
-                                                            <div class="widget-numbers text-warning">$12.4k</div>
-                                                            <div class="text-muted">Revenue</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                       <div class="chart-container">
+                                        <canvas id="chart-horiz-bar" class="chart-container"></canvas>
+                                    </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <h6 class="text-muted text-uppercase font-size-md opacity-5 fw-normal">Recent Activity</h6>
+                                    <h6 class="text-muted text-uppercase font-size-md opacity-5 fw-normal">Top Categories</h6>
                                     <div class="scroll-area-sm">
                                         <div class="scrollbar-container">
                                             <ul class="rm-list-borders rm-list-borders-scroll list-group list-group-flush">
@@ -232,16 +218,19 @@
                                                     <div class="widget-content p-0">
                                                         <div class="widget-content-wrapper">
                                                             <div class="widget-content-left me-3">
-                                                                <div class="badge rounded-pill bg-success">New</div>
+                                                                <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
                                                             </div>
                                                             <div class="widget-content-left">
-                                                                <div class="widget-heading">Order #4582</div>
-                                                                <div class="widget-subheading">2 minutes ago</div>
+                                                                <div class="widget-heading">Electronics</div>
+                                                                <div class="widget-subheading">Tech Products</div>
                                                             </div>
                                                             <div class="widget-content-right">
                                                                 <div class="font-size-xlg text-muted">
                                                                     <small class="opacity-5 pe-1">$</small>
-                                                                    <span>245</span>
+                                                                    <span>842</span>
+                                                                    <small class="text-success ps-2">
+                                                                        <i class="fa fa-angle-up"></i>
+                                                                    </small>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -251,16 +240,19 @@
                                                     <div class="widget-content p-0">
                                                         <div class="widget-content-wrapper">
                                                             <div class="widget-content-left me-3">
-                                                                <div class="badge rounded-pill bg-info">Processing</div>
+                                                                <img width="42" class="rounded-circle" src="assets/images/avatars/2.jpg" alt="">
                                                             </div>
                                                             <div class="widget-content-left">
-                                                                <div class="widget-heading">Order #4581</div>
-                                                                <div class="widget-subheading">15 minutes ago</div>
+                                                                <div class="widget-heading">Fashion</div>
+                                                                <div class="widget-subheading">Clothing & Accessories</div>
                                                             </div>
                                                             <div class="widget-content-right">
                                                                 <div class="font-size-xlg text-muted">
                                                                     <small class="opacity-5 pe-1">$</small>
-                                                                    <span>89</span>
+                                                                    <span>567</span>
+                                                                    <small class="text-success ps-2">
+                                                                        <i class="fa fa-angle-up"></i>
+                                                                    </small>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -270,16 +262,19 @@
                                                     <div class="widget-content p-0">
                                                         <div class="widget-content-wrapper">
                                                             <div class="widget-content-left me-3">
-                                                                <div class="badge rounded-pill bg-warning">Pending</div>
+                                                                <img width="42" class="rounded-circle" src="assets/images/avatars/3.jpg" alt="">
                                                             </div>
                                                             <div class="widget-content-left">
-                                                                <div class="widget-heading">Order #4580</div>
-                                                                <div class="widget-subheading">1 hour ago</div>
+                                                                <div class="widget-heading">Home & Garden</div>
+                                                                <div class="widget-subheading">Interior Design</div>
                                                             </div>
                                                             <div class="widget-content-right">
                                                                 <div class="font-size-xlg text-muted">
                                                                     <small class="opacity-5 pe-1">$</small>
-                                                                    <span>312</span>
+                                                                    <span>324</span>
+                                                                    <small class="text-warning ps-2">
+                                                                        <i class="fa fa-dot-circle"></i>
+                                                                    </small>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -289,16 +284,19 @@
                                                     <div class="widget-content p-0">
                                                         <div class="widget-content-wrapper">
                                                             <div class="widget-content-left me-3">
-                                                                <div class="badge rounded-pill bg-primary">Shipped</div>
+                                                                <img width="42" class="rounded-circle" src="assets/images/avatars/4.jpg" alt="">
                                                             </div>
                                                             <div class="widget-content-left">
-                                                                <div class="widget-heading">Order #4579</div>
-                                                                <div class="widget-subheading">3 hours ago</div>
+                                                                <div class="widget-heading">Sports & Outdoors</div>
+                                                                <div class="widget-subheading">Fitness Equipment</div>
                                                             </div>
                                                             <div class="widget-content-right">
                                                                 <div class="font-size-xlg text-muted">
                                                                     <small class="opacity-5 pe-1">$</small>
-                                                                    <span>178</span>
+                                                                    <span>289</span>
+                                                                    <small class="text-danger ps-2">
+                                                                        <i class="fa fa-angle-down"></i>
+                                                                    </small>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -308,16 +306,19 @@
                                                     <div class="widget-content p-0">
                                                         <div class="widget-content-wrapper">
                                                             <div class="widget-content-left me-3">
-                                                                <div class="badge rounded-pill bg-danger">Cancelled</div>
+                                                                <img width="42" class="rounded-circle" src="assets/images/avatars/5.jpg" alt="">
                                                             </div>
                                                             <div class="widget-content-left">
-                                                                <div class="widget-heading">Order #4578</div>
-                                                                <div class="widget-subheading">5 hours ago</div>
+                                                                <div class="widget-heading">Books & Media</div>
+                                                                <div class="widget-subheading">Digital Content</div>
                                                             </div>
                                                             <div class="widget-content-right">
                                                                 <div class="font-size-xlg text-muted">
                                                                     <small class="opacity-5 pe-1">$</small>
-                                                                    <span>67</span>
+                                                                    <span>156</span>
+                                                                    <small class="text-success ps-2">
+                                                                        <i class="fa fa-angle-up"></i>
+                                                                    </small>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -443,22 +444,7 @@
                             <div class="tab-pane fade" id="tab-bandwidth-2" role="tabpanel">
                                 <div class="widget-chart p-3">
                                     <div class="chart-container-lg">
-                                        <div class="d-flex flex-column justify-content-center align-items-center h-100">
-                                            <div class="row w-100 text-center">
-                                                <div class="col-4">
-                                                    <div class="widget-numbers text-info fsize-4">2.4 TB</div>
-                                                    <div class="text-muted">Data Transfer</div>
-                                                </div>
-                                                <div class="col-4">
-                                                    <div class="widget-numbers text-success fsize-4">99.9%</div>
-                                                    <div class="text-muted">Uptime</div>
-                                                </div>
-                                                <div class="col-4">
-                                                    <div class="widget-numbers text-alternate fsize-4">847</div>
-                                                    <div class="text-muted">Requests/s</div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <canvas id="line-chart-2"></canvas>
                                     </div>
                                     <div class="widget-chart-content text-center mt-5">
                                         <div class="widget-description mt-0 text-success">
