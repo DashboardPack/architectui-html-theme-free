@@ -1,6 +1,6 @@
 // Imports
 
-import $ from "jquery";
+import $ from "./jquery-global";
 import * as bootstrap from 'bootstrap';
 import 'metismenu';
 
@@ -74,4 +74,3 @@ $(document).ready(() => {
     resizeClass();
 
 });
-

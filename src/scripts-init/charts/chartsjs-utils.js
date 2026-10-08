@@ -142,7 +142,6 @@ window.chartColors = chartColors;
   Samples.utils.srand(Date.now());
 
   // Google Analytics
-  /* eslint-disable */
   if (document.location.hostname.match(/^(www\.)?chartjs\.org$/)) {
     (function (i, s, o, g, r, a, m) {
       i["GoogleAnalyticsObject"] = r;
@@ -166,5 +165,4 @@ window.chartColors = chartColors;
     ga("create", "UA-28909194-3", "auto");
     ga("send", "pageview");
   }
-  /* eslint-enable */
 })(window);

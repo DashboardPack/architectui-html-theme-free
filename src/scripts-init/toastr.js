@@ -1,5 +1,6 @@
 // Toastr
 
+import "../jquery-global";
 import toastr from 'toastr';
 
 $(document).ready(() => {

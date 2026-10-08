@@ -1,8 +1,8 @@
 // FlagKit
 
-$FLAGKIT_FOLDER_PATH: '~flagkit-web/svgs/';
+$FLAGKIT_FOLDER_PATH: 'flagkit-web/svgs/';
 
-@import '~flagkit-web/styles/flags.scss';
+@import 'flagkit-web/styles/flags.scss';
 
 .flag {
   @include flag-background('16');

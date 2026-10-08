@@ -5,6 +5,7 @@ dist
 node_modules
 .idea
 architectui-html-free
+/*.html
 CLAUDE.md
 JQUERY_MIGRATION_PLAN.md
 .DS_Store

@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file.
 
+## [4.9.0] - 2026-10-08
+
+### ⚡ Tooling
+
+- Replaced the webpack build/dev stack with **Vite 8**.
+- Added a small Handlebars page renderer that keeps the existing 26 demo page templates and partials.
+- Removed Babel, webpack loaders/plugins, `webpack-cli`, and `webpack-dev-server`.
+- Added explicit jQuery global setup for legacy demo scripts that previously relied on webpack `ProvidePlugin`/`expose-loader`.
+- Normalized Sass package imports by removing webpack-only `~` prefixes.
+
+### 📦 Dependencies
+
+- Removed unused direct dependencies: `@googlemaps/js-api-loader`, `animate.css`, `handlebars-loader`, and `wnumb`.
+- Removed obsolete npm `overrides`; the Vite-based dependency tree audits clean without them.
+
+### ✅ Verification
+
+- `npm run lint` passes.
+- `npm run build` passes and emits all 26 pages to `architectui-html-free`.
+- `npm audit`: **0 vulnerabilities**.
+- Vite dev server starts on `http://localhost:8080/` and serves HTML plus static assets.
+
 ## [4.8.0] - 2026-08-03
 
 ### 🔒 Security
