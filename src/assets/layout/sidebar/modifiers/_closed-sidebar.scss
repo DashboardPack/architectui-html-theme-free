@@ -30,6 +30,10 @@
       ul li a {
         text-indent: -99rem;
         padding: 0;
+
+        .badge {
+          display: none;
+        }
       }
 
       .metismenu-icon {
@@ -78,6 +82,10 @@
           li a {
             text-indent: initial;
             padding: 0 $layout-spacer-x 0 45px;
+
+            .badge {
+              display: inline-block;
+            }
           }
         }
 

@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [4.9.2] - 2026-10-08
+
+### Fixed
+
+- Hid sidebar badges while the desktop sidebar is collapsed, so the PRO upsell item renders as a clean icon-only rail item and restores the badge when expanded.
+
 ## [4.9.1] - 2026-10-08
 
 ### Design
