@@ -1,0 +1,138 @@
+// Small 2026 polish layer: keeps the template API stable while making the
+// default theme feel more consistent across surfaces and controls.
+
+$modern-surface-border: rgba(shade-color($primary, 40%), .09);
+$modern-soft-shadow: 0 .625rem 1.875rem rgba(shade-color($primary, 55%), .07);
+$modern-hover-shadow: 0 .875rem 2.25rem rgba(shade-color($primary, 55%), .11);
+$modern-focus-ring: 0 0 0 .2rem rgba($primary, .14);
+
+body {
+  background: #f6f8fc;
+  color: #3f4652;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.app-theme-white {
+  &.app-container {
+    background:
+      linear-gradient(180deg, rgba($white, .72) 0, rgba(#f6f8fc, 0) 280px),
+      #f6f8fc;
+  }
+
+  .app-footer .app-footer__inner,
+  .app-header {
+    background: rgba($white, .88);
+    border-bottom: 1px solid rgba(shade-color($primary, 55%), .08);
+    backdrop-filter: saturate(160%) blur(10px);
+  }
+
+  .app-sidebar {
+    background: rgba($white, .96);
+    border-right: 1px solid rgba(shade-color($primary, 55%), .07);
+  }
+}
+
+.app-header.header-shadow,
+.app-sidebar.sidebar-shadow {
+  box-shadow: 0 .5rem 1.5rem rgba(shade-color($primary, 55%), .06);
+}
+
+.app-main .app-main__inner {
+  padding-top: ($grid-gutter-width * 1.2);
+}
+
+.card {
+  border: 1px solid $modern-surface-border;
+  border-radius: .5rem;
+  box-shadow: $modern-soft-shadow;
+
+  &:hover {
+    box-shadow: $modern-hover-shadow;
+  }
+}
+
+.card-header {
+  border-bottom-color: rgba(shade-color($primary, 45%), .08);
+  letter-spacing: 0;
+}
+
+.btn {
+  border-radius: .45rem;
+}
+
+.btn-shadow {
+  box-shadow: 0 .375rem .875rem rgba(shade-color($primary, 40%), .16);
+}
+
+.btn-primary,
+.btn-info {
+  box-shadow: 0 .5rem 1rem rgba($primary, .16);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 .625rem 1.25rem rgba($primary, .22);
+  }
+}
+
+.form-control,
+.form-select,
+.input-group-text {
+  border-color: rgba(shade-color($primary, 45%), .12);
+  border-radius: .45rem;
+}
+
+.form-control:focus,
+.form-select:focus,
+.btn:focus,
+.btn-check:focus + .btn {
+  box-shadow: $modern-focus-ring;
+}
+
+.dropdown-menu,
+.popover,
+.modal-content,
+.toast {
+  border: 1px solid $modern-surface-border;
+  border-radius: .5rem;
+  box-shadow: $modern-soft-shadow;
+}
+
+.vertical-nav-menu {
+  li a {
+    border-radius: .5rem;
+    color: #3f4652;
+  }
+
+  li a:hover,
+  li a.mm-active,
+  ul > li > a.mm-active {
+    background: rgba($primary, .09);
+  }
+
+  li a.mm-active {
+    box-shadow: inset 3px 0 0 rgba($primary, .55);
+  }
+
+  i.metismenu-icon {
+    opacity: .42;
+  }
+}
+
+.table {
+  --bs-table-hover-bg: rgba(#e0f3ff, .62);
+}
+
+.badge {
+  letter-spacing: 0;
+}
+
+.progress {
+  background-color: rgba(shade-color($primary, 45%), .09);
+}
+
+.widget-content .widget-heading,
+.card-header-title,
+.app-sidebar__heading {
+  letter-spacing: 0;
+}
