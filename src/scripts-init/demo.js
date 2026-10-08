@@ -1,5 +1,7 @@
 // Demo Theme Options
 
+import "../jquery-global";
+
 $(document).ready(() => {
 
     $('.btn-open-options').click(function () {

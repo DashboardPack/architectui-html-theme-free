@@ -1,6 +1,8 @@
 // Maps Implementation with Google Maps Embed (No API Key Required)
 // Uses Google Maps iframe embeds with Google watermarks
 
+import "../jquery-global";
+
 $(document).ready(() => {
 
     // Google Maps Satellite View

@@ -1,5 +1,6 @@
 // Perfect Scrollbar
 
+import "../jquery-global";
 import PerfectScrollbar from 'perfect-scrollbar';
 
 $(document).ready(() => {
