@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [4.9.1] - 2026-10-08
+
+### Design
+
+- Added a small modern refresh layer for the default theme.
+- Softened the page background, card shadows, borders, focus states, and menu hover states for a more consistent 2026 dashboard feel.
+- Updated the source banner version to match the package version.
+
 ## [4.9.0] - 2026-10-08
 
 ### ⚡ Tooling

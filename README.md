@@ -1,7 +1,7 @@
 # ArchitectUI Bootstrap 5 jQuery/HTML Theme FREE
 ## Made with love by DashboardPack.com
 
-[![npm version](https://img.shields.io/badge/version-4.9.0-blue.svg)](https://github.com/DashboardPack/architectui-html-theme-free)
+[![npm version](https://img.shields.io/badge/version-4.9.1-blue.svg)](https://github.com/DashboardPack/architectui-html-theme-free)
 [![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)](package.json)
 [![Security](https://img.shields.io/badge/runtime%20security-0%20vulnerabilities-brightgreen.svg)](package.json)
 [![SASS](https://img.shields.io/badge/SASS-modernized-purple.svg)](src/assets/)
@@ -144,6 +144,7 @@ This version includes breaking improvements. For existing projects:
 4. **Test your maps** - new implementation may require updates
 
 ## **Version History**
+- **v4.9.1** (2026-10-08) - Modernized default theme surfaces, shadows, focus states, and navigation polish
 - **v4.9.0** (2026-10-08) - Vite 8 migration, webpack toolchain removal, dependency cleanup
 - **v4.8.0** (2026-08-03) - PostCSS security patch, webpack-dev-server 6, chart + dev-server bug fixes
 - **v4.7.0** (2026-06-19) - Full dependency refresh, Babel 8 + sass-loader 17, latest webpack/eslint/sass toolchain
