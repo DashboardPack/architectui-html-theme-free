@@ -19,15 +19,15 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.3.1",
-    "@fullcalendar/core": "^6.1.21",
-    "@fullcalendar/daygrid": "^6.1.21",
-    "@fullcalendar/interaction": "^6.1.21",
-    "@fullcalendar/list": "^6.1.21",
-    "@fullcalendar/timegrid": "^6.1.21",
-    "@kurkle/color": "^0.6.4",
+    "@fullcalendar/core": "^6.1.22",
+    "@fullcalendar/daygrid": "^6.1.22",
+    "@fullcalendar/interaction": "^6.1.22",
+    "@fullcalendar/list": "^6.1.22",
+    "@fullcalendar/timegrid": "^6.1.22",
+    "@kurkle/color": "^0.6.5",
     "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.8",
-    "chart.js": "^4.5.1",
+    "bootstrap": "^5.3.9",
+    "chart.js": "^4.6.1",
     "jquery": "^4.0.0",
     "metismenu": "^3.1.0",
     "pe7-icon": "^1.0.4",
@@ -36,10 +36,10 @@
   },
   "devDependencies": {
     "animate-sass": "^0.8.2",
-    "eslint": "^10.12.0",
+    "eslint": "^10.15.0",
     "handlebars": "^4.7.10",
-    "sass": "^1.105.1",
-    "vite": "^8.3.4"
+    "sass": "^1.108.2",
+    "vite": "^8.3.8"
   },
   "engines": {
     "node": ">=22.15.0"
