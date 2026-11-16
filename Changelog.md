@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [4.9.3] - 2026-11-16
+
+### Dependencies
+
+- Updated Bootstrap to 5.3.9 (npm package and the vendored SCSS sources).
+- Updated Chart.js to 4.6.1, FullCalendar plugins to 6.1.22, Sass to 1.108, Vite to 8.3.8 and ESLint to 10.15.
+- FullCalendar core stays on 6.x because v7 has no matching plugin packages yet.
+- `npm audit` reports 0 vulnerabilities.
+
 ## [4.9.2] - 2026-10-08
 
 ### Fixed
