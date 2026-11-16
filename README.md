@@ -1,7 +1,7 @@
 # ArchitectUI Bootstrap 5 jQuery/HTML Theme FREE
 ## Made with love by DashboardPack.com
 
-[![npm version](https://img.shields.io/badge/version-4.9.2-blue.svg)](https://github.com/DashboardPack/architectui-html-theme-free)
+[![npm version](https://img.shields.io/badge/version-4.9.3-blue.svg)](https://github.com/DashboardPack/architectui-html-theme-free)
 [![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)](package.json)
 [![Security](https://img.shields.io/badge/runtime%20security-0%20vulnerabilities-brightgreen.svg)](package.json)
 [![SASS](https://img.shields.io/badge/SASS-modernized-purple.svg)](src/assets/)
@@ -94,7 +94,7 @@ npm run preview
 ## 🎯 **Key Features**
 
 ### **Modern Technology Stack**
-- **Bootstrap 5.3.8** - Latest version with all features
+- **Bootstrap 5.3.9** - Latest version with all features
 - **jQuery 4.0.0** - Major modernization release
 - **Chart.js 4.5.1** - Beautiful data visualizations
 - **FontAwesome 7.3.1** - Latest icon library version
@@ -144,6 +144,7 @@ This version includes breaking improvements. For existing projects:
 4. **Test your maps** - new implementation may require updates
 
 ## **Version History**
+- **v4.9.3** (2026-11-16) - Dependency refresh: Bootstrap 5.3.9, Chart.js 4.6, FullCalendar 6.1.22
 - **v4.9.2** (2026-10-08) - Fixed collapsed desktop sidebar badge rendering
 - **v4.9.1** (2026-10-08) - Modernized default theme surfaces, shadows, focus states, and navigation polish
 - **v4.9.0** (2026-10-08) - Vite 8 migration, webpack toolchain removal, dependency cleanup
